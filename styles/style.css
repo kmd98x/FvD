@@ -6,6 +6,7 @@
 }
 body{
 	margin: 0;
+	background-color: var(--color-header);
 }
 
 /* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
@@ -29,7 +30,7 @@ body{
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* kleuren */
 	--color-text:#111;
 	--color-background:#eee;
 	--color-lightbeige:rgb(250, 247, 243);
@@ -47,6 +48,14 @@ body{
 	--font-proxyma:"proxyma";
 	--font-proxyma_bold:"proxyma_bold";
 	--font-saint_laurent:"saint_laurent";
+
+	/* spacing */
+	--spacing-4:0.25em;
+	--spacing-8:0.5em;
+	--spacing-12:0.75em;
+	--spacing-16:1em;
+	--spacing-20:1.25em;
+	--spacing-24:1.50em;
 
 }
 
@@ -66,14 +75,14 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--color-header);
+	
 
 	a{
 		color:var(--color-text);
 		text-decoration: none;
 		padding: .6em;
 		font-family: var(--font-proxyma);
-		
+
 		&:hover{
 			color: var(--color-header-text-hover);
 			/* normaal .top_navigation a:hover{\
@@ -82,3 +91,47 @@ body{
 	}
 	
 }
+
+.navigation{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	button{
+		background-color: transparent;
+		border: none;
+		display: flex;
+		align-items: center;
+		gap:var(--spacing-12);
+	
+	}
+
+	form {
+		position: relative;
+		input{
+			border: none;
+			border-bottom: 1px solid var(--color-border_bottom_searchbar);
+			padding: var(--spacing-12);
+			
+		}
+		img{
+			position: absolute;
+			right: 0;
+		}
+	}
+
+
+	.user_actions{
+		display: flex;
+	
+		li{
+		list-style: none;
+		}
+	}
+	
+
+}
+
+
+

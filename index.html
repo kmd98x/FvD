@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Damesmode • de Bijenkorf • Gratis retourneren</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="jouw naam" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
-	<header>
-		<div class="top_navigation">
-			<a href="#">Winkels & Openingstijden</a>
-			<a href="#">Nu besteld, <span class="delivery_date"></span> in huis</a>
-			<a href="#">Klantenservice</a>
-		</div>
-	</header>
+        <title>Damesmode • de Bijenkorf • Gratis retourneren</title>
 
-	<script defer src="scripts/script.js"></script>
-</body>
-	
+        <link href="styles/style.css" rel="stylesheet" />
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    </head>
+
+    <body>
+        <header>
+            <div class="top_navigation">
+                <a href="#">Winkels & Openingstijden</a>
+                <a href="#"
+                    >Nu besteld, <span class="delivery_date"></span> in huis</a
+                >
+                <a href="#">Klantenservice</a>
+            </div>
+
+            <nav class="navigation">
+                <button>
+                    <img
+                        src="images/icons/hamburger_menu_icon.svg"
+                        alt="hamburger menu icon"
+                    />
+                    Menu
+                </button>
+
+                <img
+                    src="images/icons/bijenkorf_logo.svg"
+                    alt="De bijenkort ;logo"
+                />
+
+                <form>
+                    <input type="text" placeholder="Waar ben je naar opzoek?" />
+                    <img
+                        src="images/icons/search_icon.svg"
+                        alt="Waar ben je naar opzoek?"
+                    />
+                </form>
+
+                <ul class="user_actions">
+                    <li><img src="images/icons/user_icon.svg" alt="user icon"></li>
+					<li>
+						<img src="images/icons/favoriet_icon.svg" alt="favoriet icon">
+						<span>0</span>
+					</li>
+					<li>
+						<img src="images/icons/shopping_bag_icon.svg" alt="boodschapppentas">
+						<span>0</span>
+					</li>
+                </ul>
+            </nav>
+        </header>
+
+        <script defer src="scripts/script.js"></script>
+    </body>
 </html>
