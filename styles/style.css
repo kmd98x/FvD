@@ -4,10 +4,25 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
+body{
+	margin: 0;
+}
 
+/* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
+@font-face {
+	font-family: "proxyma";
+	src: url(../fonts/Proxima\ Nova\ Saint\ Laurent\ Clutch.woff2);
+}
 
+@font-face {
+	font-family: "proxyma_bold";
+	src: url(../fonts/Proxima\ Nova\ Semibold\ Saint\ Laurent\ Clutch.woff2)
+}
 
-
+@font-face {
+	font-family: "saint_laurent";
+	src: url(../fonts/Saint\ Laurent\ Clutch.woff2)
+}
 
 
 /*********************/
@@ -19,6 +34,7 @@
 	--color-background:#eee;
 	--color-lightbeige:rgb(250, 247, 243);
 	--color-header:#F9F7F3;
+	--color-header-text-hover:#aba6a4;
 	--color-hamburger:#808080;
 	--color-border_bottom_searchbar:#F0EEEC;
 	--color-status_background:#F6EFE7;
@@ -26,6 +42,12 @@
 	--color-button:#F7A800;
 	--color-best_seller_text:#3E3A37;
 	--color-border_onder_prijs:#E9E5E3;
+	
+	/* fonts */
+	--font-proxyma:"proxyma";
+	--font-proxyma_bold:"proxyma_bold";
+	--font-saint_laurent:"saint_laurent";
+
 }
 
 
@@ -38,3 +60,25 @@
 
 /* jouw code */
 
+/* Top navigation */
+
+.top_navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-header);
+
+	a{
+		color:var(--color-text);
+		text-decoration: none;
+		padding: .6em;
+		font-family: var(--font-proxyma);
+		
+		&:hover{
+			color: var(--color-header-text-hover);
+			/* normaal .top_navigation a:hover{\
+			maar dit doe ik nu dmv nesting */
+		}
+	}
+	
+}
