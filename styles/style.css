@@ -17,6 +17,15 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-lightbeige:rgb(250, 247, 243);
+	--color-header:#F9F7F3;
+	--color-hamburger:#808080;
+	--color-border_bottom_searchbar:#F0EEEC;
+	--color-status_background:#F6EFE7;
+	--color-image_background:#F1F0EC;
+	--color-button:#F7A800;
+	--color-best_seller_text:#3E3A37;
+	--color-border_onder_prijs:#E9E5E3;
 }
 
 
