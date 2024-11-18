@@ -58,7 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/IMG_3840.jpg" width="375px" alt="De 1e foto van een tas">
+  <img src="readme-images/IMG_3841.jpg" width="375px" alt="Nog meer foto's van het product en informatie over de kleur en prijs met een button om het in je winkelagen toe te voegen.">
+  <img src="readme-images/IMG_3842.jpg" width="375px" alt="Dropdown met samenstelling en specificaties en productinformatie met een fixed balkje van de tas die je in je winkelmand kunt toevoegen.">
+  <img src="readme-images/IMG_3843.jpg" width="375px" alt="Andere producten die andere gebruikers ook bekeken hebben">
+  <img src="readme-images/IMG_3844.jpg" width="375px" alt="Recent bekeken">
+  <img src="readme-images/IMG_3845.jpg" width="375px" alt="Informatie over bezorging en retourneren">
+  <!-- En dan hetzelfde als de 2 laatste fotos van mijn 1e pagina, dus betaal mogelijkheden en de footer. -->
+ 
  
 </details>
 
