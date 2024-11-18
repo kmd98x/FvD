@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
   
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -79,6 +79,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Slechte motoriek 
+  Ging best wel goed vind ik
+
+  Visuele beperking
+  Hemifield glass zag ik wel alles
+  Central field glass zag ik minder
+
+  Concentratie problemen
+  Moeilijk te focussen, omdat mijn focus op de ballon was
+
+  Spasmes/parkison
+  Kon ik mij keyboard niet gebruiken.
+
 </details>
 
 
@@ -92,10 +105,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/IMG_3846.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/IMG_3847.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
