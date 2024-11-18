@@ -37,11 +37,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   1e pagina: https://www.debijenkorf.nl/damesmode
-  23 pagina: https://www.debijenkorf.nl/saint-laurent-cassandre-flap-clutch-van-quilted-kalfsleer-1162010061-116201006100000?ref=%2Ftassen%2Fclutches
+  2e pagina: https://www.debijenkorf.nl/saint-laurent-cassandre-flap-clutch-van-quilted-kalfsleer-1162010061-116201006100000?ref=%2Ftassen%2Fclutches
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  hier de naam van de pagina: Damesmode • de Bijenkorf • Gratis retourneren
+
+  <img src="readme-images/IMG_3827.jpg" width="375px" alt="Ontdek de dames categorieën">
+  <img src="readme-images/IMG_3828.jpg/" width="375px" alt="Ontdek winterselectie">
+  <img src="readme-images/IMG_3829.jpg" width="375px" alt="Selecties van editors">
+  <img src="readme-images/IMG_3830.jpg" width="375px" alt="Populaire producten">
+  <img src="readme-images/IMG_3831.jpg" width="375px" alt="Nieuwe collectie">
+  <img src="readme-images/IMG_3832.jpg" width="375px" alt="Wat vind je van deze outfits?">
+  <img src="readme-images/IMG_3833.jpg" width="375px" alt="Inspiratie">
+  <img src="readme-images/IMG_3834.jpg" width="375px" alt="Nieuwe merken">
+  <img src="readme-images/IMG_3835.jpg" width="375px" alt="Ken je deze merken al?">
+  <img src="readme-images/IMG_3836.jpg" width="375px" alt="24 nieuwe artikelen van populaire merken">
+  <img src="readme-images/IMG_3837.jpg" width="375px" alt="Informatie over bezorging en retourneren">
+  <img src="readme-images/IMG_3838.jpg" width="375px" alt="Acties zoals 'regel het zelf', 'Veelgestelde vragen', 'Heb je hulp nodig? en betaal mogelijkheden">
+  <img src="readme-images/IMG_3839.jpg" width="375px" alt="Dropdown menu met klantenservice, winkels, ontdek en de Bijenkorf en de socials met een footer erbij">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
