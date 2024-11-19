@@ -44,7 +44,7 @@ body{
 	--color-header:#F9F7F3;
 	--color-header-text-hover:#aba6a4;
 	--color-hamburger:#808080;
-	--color-border_bottom_searchbar:#F0EEEC;
+	--color-border_bottom_searchbar:#DCD8D4; 
 	--color-status_background:#F6EFE7;
 	--color-image_background:#F1F0EC;
 	--color-button:#F7A800;
@@ -107,14 +107,16 @@ body{
 
 	img{
 		grid-column-start: 3;
+		grid-column-end: 5;
 		justify-self:center;
+
 	}
 	
 
 
 	.container{
 		display: grid;
-		grid-template-columns: repeat(6,1fr);
+		grid-template-columns: repeat(5,1fr) 7.6em;
 		align-items: center;
 		gap:2em;
 	}
@@ -129,7 +131,12 @@ body{
 	}
 
 	form {
-		grid-column-start: 4;
+
+		/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+		::placeholder{
+			color: var(--color-text);
+		}
+		grid-column-start: 5;
 		grid-column-end: 6;
 		justify-self:end;
 		width: 13.5em;
@@ -150,7 +157,7 @@ body{
 
 
 	.user_actions{
-		gap:1.8em;
+		gap:1.5em;
 		justify-self:end;
 		margin: 0;
 		padding: 0;
@@ -159,6 +166,20 @@ body{
 	
 		li{
 		list-style: none;
+		position: relative;
+		span{
+			position: absolute;
+			top:0;
+			right: -0.5em;
+			width: 1.5em;
+			height: 1.5em;
+			background-color: var(--color-status_background);
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			border-radius: 10em;
+			font-size: 0.7em;
+		}
 		}
 	}
 	
