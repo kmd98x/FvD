@@ -7,8 +7,15 @@
 body{
 	margin: 0;
 	background-color: var(--color-header);
+	font-family: var(--font-proxyma);
 }
 
+.container{
+	width: calc(100% - 8em);
+	
+	margin: auto;
+
+}
 /* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
 @font-face {
 	font-family: "proxyma";
@@ -72,6 +79,7 @@ body{
 /* Top navigation */
 
 .top_navigation{
+	font-size: 0.9em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -93,10 +101,23 @@ body{
 }
 
 .navigation{
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.05);
+	padding: 1.5em 0;
 	background-color: white;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
+	img{
+		grid-column-start: 3;
+		justify-self:center;
+	}
+	
+
+
+	.container{
+		display: grid;
+		grid-template-columns: repeat(6,1fr);
+		align-items: center;
+		gap:2em;
+	}
 
 	button{
 		background-color: transparent;
@@ -108,8 +129,13 @@ body{
 	}
 
 	form {
+		grid-column-start: 4;
+		grid-column-end: 6;
+		justify-self:end;
+		width: 13.5em;
 		position: relative;
 		input{
+			width: 100%;
 			border: none;
 			border-bottom: 1px solid var(--color-border_bottom_searchbar);
 			padding: var(--spacing-12);
@@ -118,11 +144,17 @@ body{
 		img{
 			position: absolute;
 			right: 0;
+
 		}
 	}
 
 
 	.user_actions{
+		gap:1.8em;
+		justify-self:end;
+		margin: 0;
+		padding: 0;
+		grid-column-start: 6;
 		display: flex;
 	
 		li{
