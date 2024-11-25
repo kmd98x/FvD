@@ -210,10 +210,6 @@ main section h1 {
     width: 1px;
 }
 
-/************************************************/
-/* ONTDEK DE DAMES CATEGORIEEN */
-/************************************************/
-
 main img{
 	width: 100%;
 }
@@ -221,6 +217,36 @@ main img{
 main video{
 	width: 100%;
 }
+
+
+/************************************************/
+/* ONTDEK DE DAMES CATEGORIEEN */
+/************************************************/
+
+.ladies-category{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.ladies-category ul{
+	list-style: none;
+}
+
+.ladies-category a{
+	position: relative;
+	display: block;
+}
+
+
+.ladies-category a p{
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
 
 /************************************************/
 /* VIDEO */
