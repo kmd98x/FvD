@@ -1,74 +1,64 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
-body{
-	margin: 0;
-	background-color: var(--color-header);
-	font-family: var(--font-proxyma);
+body {
+    margin: 0;
+    background-color: var(--color-header);
+    font-family: var(--font-proxyma);
 }
 
-.container{
-	width: calc(100% - 8em);
-	
-	margin: auto;
-
-}
 /* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
 @font-face {
-	font-family: "proxyma";
-	src: url(../fonts/Proxima\ Nova\ Saint\ Laurent\ Clutch.woff2);
+    font-family: "proxyma";
+    src: url(../fonts/Proxima\ Nova\ Saint\ Laurent\ Clutch.woff2);
 }
 
 @font-face {
-	font-family: "proxyma_bold";
-	src: url(../fonts/Proxima\ Nova\ Semibold\ Saint\ Laurent\ Clutch.woff2)
+    font-family: "proxyma_bold";
+    src: url(../fonts/Proxima\ Nova\ Semibold\ Saint\ Laurent\ Clutch.woff2);
 }
 
 @font-face {
-	font-family: "saint_laurent";
-	src: url(../fonts/Saint\ Laurent\ Clutch.woff2)
+    font-family: "saint_laurent";
+    src: url(../fonts/Saint\ Laurent\ Clutch.woff2);
 }
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* kleuren */
-	--color-text:#111;
-	--color-background:#eee;
-	--color-lightbeige:rgb(250, 247, 243);
-	--color-header:#F9F7F3;
-	--color-header-text-hover:#aba6a4;
-	--color-hamburger:#808080;
-	--color-border_bottom_searchbar:#DCD8D4; 
-	--color-status_background:#F6EFE7;
-	--color-image_background:#F1F0EC;
-	--color-button:#F7A800;
-	--color-best_seller_text:#3E3A37;
-	--color-border_onder_prijs:#E9E5E3;
-	
-	/* fonts */
-	--font-proxyma:"proxyma";
-	--font-proxyma_bold:"proxyma_bold";
-	--font-saint_laurent:"saint_laurent";
+    /* kleuren */
+    --color-text: #111;
+    --color-background: #eee;
+    --color-lightbeige: rgb(250, 247, 243);
+    --color-header: #f9f7f3;
+    --color-header-text-hover: #aba6a4;
+    --color-hamburger: #808080;
+    --color-border_bottom_searchbar: #dcd8d4;
+    --color-status_background: #f6efe7;
+    --color-image_background: #f1f0ec;
+    --color-button: #f7a800;
+    --color-best_seller_text: #3e3a37;
+    --color-border_onder_prijs: #e9e5e3;
 
-	/* spacing */
-	--spacing-4:0.25em;
-	--spacing-8:0.5em;
-	--spacing-12:0.75em;
-	--spacing-16:1em;
-	--spacing-20:1.25em;
-	--spacing-24:1.50em;
+    /* fonts */
+    --font-proxyma: "proxyma";
+    --font-proxyma_bold: "proxyma_bold";
+    --font-saint_laurent: "saint_laurent";
 
+    /* spacing */
+    --spacing-4: 0.25em;
+    --spacing-8: 0.5em;
+    --spacing-12: 0.75em;
+    --spacing-16: 1em;
+    --spacing-20: 1.25em;
+    --spacing-24: 1.5em;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -78,114 +68,103 @@ body{
 
 /* Top navigation */
 
+header section {
+    width: calc(100% - 8em);
+    margin: auto;
 
-.top_navigation{
-	font-size: 0.9em;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	
-
-	a{
-		color:var(--color-text);
-		text-decoration: none;
-		padding: .6em;
-		font-family: var(--font-proxyma);
-
-		&:hover{
-			color: var(--color-header-text-hover);
-			/* normaal .top_navigation a:hover{\
-			maar dit doe ik nu dmv nesting */
-		}
-	}
-	
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navigation{
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.05);
-	padding: 1.5em 0;
-	background-color: white;
-
-	img{
-		grid-column-start: 3;
-		grid-column-end: 5;
-		justify-self:center;
-
-	}
-	
-
-
-	.container{
-		display: grid;
-		grid-template-columns: repeat(5,1fr) 7.6em;
-		align-items: center;
-		gap:2em;
-	}
-
-	button{
-		background-color: transparent;
-		border: none;
-		display: flex;
-		align-items: center;
-		gap:var(--spacing-12);
-	
-	}
-
-	form {
-
-		/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
-		::placeholder{
-			color: var(--color-text);
-		}
-		grid-column-start: 5;
-		grid-column-end: 6;
-		justify-self:end;
-		width: 13.5em;
-		position: relative;
-		input{
-			width: 100%;
-			border: none;
-			border-bottom: 1px solid var(--color-border_bottom_searchbar);
-			padding: var(--spacing-12);
-			
-		}
-		img{
-			position: absolute;
-			right: 0;
-
-		}
-	}
-
-
-	.user_actions{
-		gap:1.5em;
-		justify-self:end;
-		margin: 0;
-		padding: 0;
-		grid-column-start: 6;
-		display: flex;
-	
-		li{
-		list-style: none;
-		position: relative;
-		span{
-			position: absolute;
-			top:0;
-			right: -0.5em;
-			width: 1.5em;
-			height: 1.5em;
-			background-color: var(--color-status_background);
-			align-items: center;
-			justify-content: center;
-			display: flex;
-			border-radius: 10em;
-			font-size: 0.7em;
-		}
-		}
-	}
-	
-
+header section a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.6em;
+    font-family: var(--font-proxyma);
 }
 
+header section a:hover {
+    color: var(--color-header-text-hover);
+}
 
+header nav {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5em 0;
+    background-color: white;
+}
 
+header nav section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 7.6em;
+    align-items: center;
+    gap: 2em;
+}
+
+header nav section > img {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-self: center;
+}
+
+header nav button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12);
+}
+
+header form {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    justify-self: end;
+    width: 13.5em;
+    position: relative;
+}
+
+header form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-border_bottom_searchbar);
+    padding: var(--spacing-12);
+}
+
+/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+header form input::placeholder {
+    color: var(--color-text);
+}
+
+header form img {
+    position: absolute;
+    right: 0;
+}
+
+.user_actions {
+    gap: 1.5em;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 6;
+    display: flex;
+}
+
+.user_actions li {
+    list-style: none;
+    position: relative;
+}
+
+.user_actions span {
+    position: absolute;
+    top: 0;
+    right: -0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: var(--color-status_background);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10em;
+    font-size: 0.7em;
+}
