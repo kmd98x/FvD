@@ -103,7 +103,18 @@ header nav {
     background-color: white;
 }
 
-header nav section {
+header nav section:nth-child(1) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-header);
+    z-index: 20;
+    transition: 1s;
+}
+
+header nav section:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(5, 1fr) 7.6em;
     align-items: center;
@@ -111,7 +122,7 @@ header nav section {
 	margin:0 0.5em;
 }
 
-header nav section > a img {
+header nav section:nth-child(2) > a img {
     grid-column-start: 3;
     grid-column-end: 5;
     justify-self: center;
@@ -223,28 +234,55 @@ main video{
 /* ONTDEK DE DAMES CATEGORIEEN */
 /************************************************/
 
-.ladies-category{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
+.ladies-category h2{
+    display: flex;
+    margin-left: 0.8em;
+    max-width: 20ch;
 }
 
 .ladies-category ul{
+    display: grid;
+	grid-template-columns: repeat(2,1fr);
 	list-style: none;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0 1em;
 }
 
 .ladies-category a{
 	position: relative;
 	display: block;
+    color: var(--color-background);
+    overflow: hidden;
 }
 
+.ladies-category a img{
+	display: block;
+    transition: 0.5s;
+}
+
+.ladies-category a:hover img{
+    transform: scale(1.03);
+}
 
 .ladies-category a p{
+    z-index: 10;
 	margin: 0;
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+	left: 0;
+	top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 0 1em;
+    
 }
+
 
 
 
