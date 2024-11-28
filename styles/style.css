@@ -296,6 +296,7 @@ main img{
    align-items: center;
    justify-content: flex-end;
    padding: 1em;
+   margin-top: 1.1em;
 }
 
 
@@ -313,15 +314,19 @@ main img{
 .video-section p, .video-section h2{
     margin: 0;
     color: white;
+    font-family: var(--font-saint_laurent);
+    font-weight: 300;
 }
 
 .video-section h2{
     order: 2;
     margin-bottom: 0.8em;
+    font-size: 1.7em;
 }
 
 .video-section p{
     order: 1;
+    font-size: 0.9em;
 }
 
 
@@ -338,7 +343,70 @@ main img{
 /************************************************/
 /* DE SELECTIE VAN ONZE EDITORS */
 /************************************************/
+.the-selection-section header a{
+text-decoration: none;
+border-bottom: 0.1em solid black;
+padding-bottom: 0.1em;
+font-size: 0.85em;
+color: black;
+font-weight: 500;
+}
+.the-selection-section{
+    background: white;
+    padding-top: 1.5em;
+}
 
+
+.the-selection-section h2{
+    font-family: var(--font-saint_laurent);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.the-selection-section p{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--font-saint_laurent);
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    padding: 1em;
+    margin: 0;
+} 
+
+
+.the-selection-section ul{
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    
+}
+
+.the-selection-section ul li{
+    position: relative;
+}
+
+.the-selection-section ul li a{
+    display: block;
+    margin-bottom: 0;
+}
+
+.the-selection-section ul li a img{
+	display: block;
+    transition: 0.5s;
+    width: 23.5em;
+    margin-right: 0.8em;
+}
+
+.the-selection-section ul li a:hover img{
+    transform: scale(1.03);
+}
 
 /************************************************/
 /* SPECIAAL VOOR JOU GESELECTEERD */
