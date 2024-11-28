@@ -130,6 +130,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
+  Mijn groepje was de dag voor het gesprek niet aanwezig, dus konden we geen vragen opstellen.
+
   | Sherena      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
@@ -137,15 +139,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ...            | ...                | ...          | ...              |
 
 Is mn code goed ingedeeld?
+Ja, moet alleen bij elke section een h tag erbij plaatsen en de articles moet ik vervangen met list, zoals ik het in het begin deed.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+-WC3 uitwerken
+
+-Als je bronnen hebt, ook erbij vermelden
+
+-Form met een input bij search
+
+-Hartje is een button, omdat het een microinteractie is
+
+-De artikelen zijn list items en denk over de volgorde na
+(volgorde
+h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
+
+-Css display flex en maak gebruik van order
+(als je bv order -1 doet op img, gaat ie naar boven)
+
+-Elke section moet een header hebben en als ie dat niet heeft dan moet je het hiden met css.
+
+-h4 buiten de ul, want in de ul moet de il in zitten
+
+-Gebruik scroll snap voor die 'slideshow'
+
 
 </details>
 
