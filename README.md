@@ -148,7 +148,8 @@ Ondertiteling: er zijn geen ondertitels beschikbaar bij videos, en dat maakt het
 
 
 -Control
-Links en knoppen: links worden goed weergegeven met <a>-tags en knoppen zijn voorzien van <button>
+
+Links en knoppen: links worden goed weergegeven met a tags en knoppen zijn voorzien van buttons
 Nieuwe tab: Externe links openen in een nieuwe tab en zijn duidelijk gemarkeerd
 
 
