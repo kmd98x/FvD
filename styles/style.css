@@ -107,11 +107,12 @@ header nav section:nth-child(1) {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     background: var(--color-header);
     z-index: 20;
     transition: 1s;
+    overflow: hidden;
 }
 
 header nav section:nth-child(2) {
@@ -225,9 +226,6 @@ main img{
 	width: 100%;
 }
 
-main video{
-	width: 100%;
-}
 
 
 /************************************************/
@@ -289,6 +287,52 @@ main video{
 /************************************************/
 /* VIDEO */
 /************************************************/
+
+.video-section{
+   min-height: 32.2svh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 1em;
+}
+
+
+.video-section video{
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+}
+
+.video-section p, .video-section h2{
+    margin: 0;
+    color: white;
+}
+
+.video-section h2{
+    order: 2;
+    margin-bottom: 0.8em;
+}
+
+.video-section p{
+    order: 1;
+}
+
+
+.video-section button{
+    padding: 0.9em 2em;
+    background-color: var(--color-background);
+    border: none;
+    font-size: 0.9em;
+    order: 3;
+}
+    
 
 
 /************************************************/
