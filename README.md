@@ -92,6 +92,81 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Spasmes/parkison
   Kon ik mij keyboard niet gebruiken.
 
+<img src="readme-images/1.jpg" width="375px" alt="WC3 test">
+  <img src="readme-images/2.jpg" width="375px" alt="WC3 test">
+  <img src="readme-images/3.jpg" width="375px" alt="WC3 test">
+  <img src="readme-images/4.jpg" width="375px" alt="WC3 test">
+  <img src="readme-images/5.jpg" width="375px" alt="WC3 test">
+
+Bijenkort website (eigen bevindingen)
+
+-Content
+
+Leesbaarheid: teksten zijn meestal goed leesbaar, maar sommige overlappen met afbeeldingen en dat vermindert de toegankelijkheid.
+Tekstuitlijning: Correct links uitgelijnd
+
+
+-Global code
+
+Paginatitels: elke pagina heeft een unieke titel, dus dat helpt bij navigatie 
+Viewport: je kan inzoomen, wat goed is voor gebruikers met visuele beperkingen
+Landmarks: niet zoveel gebruik gemakt van semantische code (zoals <header>, <main>)
+HTML-validatie: er zijn enkele HTML-fouten, wat technische toegankelijkheid belemmert, soms ontbreken er h2,h3 enz
+Taalattribuut: lang ontbreekt, wat screenreaders hindert bij juiste uitspraak
+
+
+-Keyboard
+
+Focus: knoppen hebben een duidelijke focus-indicator
+Toegankelijkheid: geen zichtbare skiplinks aanwezig; dit belemmert snelle navigatie voor toetsenbordgebruikers
+
+-Mobile & Touch
+
+Responsiviteit:  werkt goed in zowel portret- als landschapsmodus
+Interactiviteit: knoppen en links zijn gemakkelijk te bedienen met touch, en er is voldoende ruimte tussen interactieve elementen
+
+
+-Headings
+
+wordt niet consistent gebruikt
+
+
+-Lists
+
+word goed gebruikt
+
+
+-Images
+
+de alt teksten zijn niet duidelijk, dus dat is niet zo toegankelijk voor visuele beperkte gebruikers
+
+
+-Media
+
+Autoplay: video start automatisch, wat niet zo positief is
+Ondertiteling: er zijn geen ondertitels beschikbaar bij videos, en dat maakt het ontoegankelijk voor doven en slechthorenden
+
+
+-Control
+Links en knoppen: links worden goed weergegeven met <a>-tags en knoppen zijn voorzien van <button>
+Nieuwe tab: Externe links openen in een nieuwe tab en zijn duidelijk gemarkeerd
+
+
+-Appearance
+
+Schaling: tekst is goed leesbaar als er ingezoomd wordt
+High contrast modus: de meeste content blijft goed leesbaar in high contrast
+
+-Animatie
+animaties zijn minimaal, vooral beperkt tot hover-effecten, zonder hinderlijke effecten
+
+
+-Contrast
+
+Normale tekst: contrast voldoet aan WCAG-normen
+Overlap afbeeldingen: tekst over afbeeldingen is leesbaar 
+
+
 </details>
 
 
