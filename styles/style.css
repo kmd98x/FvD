@@ -275,8 +275,15 @@ main section:nth-of-type(7) ul li a img {
 /************************************************/
 main section:nth-of-type(5) ul li > p:nth-of-type(1),
 main section:nth-of-type(10) ul li > p:nth-of-type(1) {
-    color: gold;
+    color:var(--color--donkergrijs);
+    font-family: var(--font-proxyma);
+    font-size: 0.9em;
+    width: 15em; /* the element needs a fixed width (in px, em, %, etc) */
+    overflow: hidden; /* make sure it hides the content that overflows */
+    white-space: nowrap; /* don't break the line */
+    text-overflow: ellipsis; /* give the beautiful '...' effect */
 }
+
 
 /************************************************/
 /* LAYOUT SECTION 4,5,8,9,10 */
@@ -311,6 +318,9 @@ main section:nth-of-type(10) ul {
     padding: 0;
 }
 
+
+
+
 main section:nth-of-type(4) ul li,
 main section:nth-of-type(5) ul li,
 main section:nth-of-type(8) ul li,
@@ -320,13 +330,21 @@ main section:nth-of-type(10) ul li {
     flex-direction: column;
 }
 
+
 main section:nth-of-type(4) ul li h3,
 main section:nth-of-type(5) ul li h3,
 main section:nth-of-type(8) ul li h3,
 main section:nth-of-type(9) ul li h3,
-main section:nth-of-type(10) ul li h3 {
+main section:nth-of-type(10) ul li h3,
+main section:nth-of-type(10) ul li h4 {
     font-size: 1.2em;
     margin-bottom: 0.2em;
+}
+
+main section:nth-of-type(10) ul li h4{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-family: var(--font-proxyma_bold);
 }
 
 main section:nth-of-type(4) ul li div,
@@ -367,6 +385,7 @@ main section:nth-of-type(5) ul li h3,
 main section:nth-of-type(8) ul li h3,
 main section:nth-of-type(9) ul li h3,
 main section:nth-of-type(10) ul li h3,
+main section:nth-of-type(10) ul li h4,
 main section:nth-of-type(4) ul li h3 a,
 main section:nth-of-type(5) ul li h3 a,
 main section:nth-of-type(8) ul li h3 a,
@@ -383,11 +402,25 @@ main section:nth-of-type(8) ul li > p,
 main section:nth-of-type(9) ul li > p,
 main section:nth-of-type(10) ul li > p {
     order: 2;
-    margin-top: 0.2em;
-    font-family: var(--font-proxyma_bold);
-    color: blue;
 }
 
+main section:nth-of-type(4) ul li > p,
+main section:nth-of-type(5) ul li > p,
+main section:nth-of-type(9) ul li > p,
+main section:nth-of-type(10) ul li > p {
+    margin-top: 0.2em;
+    font-family: var(--font-proxyma_bold);
+    color: var(--color--zwart);
+}
+
+main section:nth-of-type(8) ul li >p:nth-of-type(1){
+    
+    color:var(--color--donkergrijs);
+}
+
+main section:nth-of-type(8) ul li >p:nth-of-type(2){
+    font-family: var(--font-proxyma_bold);
+}
 /************************************************/
 /* LABEL */
 /************************************************/
@@ -404,6 +437,15 @@ main section:nth-of-type(10) ul li > p {
     margin-bottom: 0;
     color: #635f5c;
     width: fit-content !important;
+}
+
+.label.paars{
+    background-color: var(--color--paars);
+    color: var(--color--wit);
+}
+main section:nth-of-type(6) .label {
+
+    background-color: var(--color--wit);
 }
 
 /************************************************/
@@ -580,12 +622,11 @@ main section:nth-of-type(5) ul li > p:nth-of-type(1) {
     font-family: var(--font-proxyma);
     margin-bottom: 0;
     font-size: 0.85em;
-    color: #635f5c;
     width: 15em; /* the element needs a fixed width (in px, em, %, etc) */
     overflow: hidden; /* make sure it hides the content that overflows */
     white-space: nowrap; /* don't break the line */
     text-overflow: ellipsis; /* give the beautiful '...' effect */
-    color: red;
+    color: var(--color--donkergrijs);
 }
 
 /* https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css */
@@ -684,6 +725,59 @@ main section:nth-of-type(7) h3 {
 /************************************************/
 /* NIEUWE MERKEN 8*/
 /************************************************/
+main section:nth-of-type(8){
+    padding-top: 1.5em;
+    background-color: var(--color--wit);
+}
+main section:nth-of-type(8) ul li:nth-of-type(1) a{
+    position: relative;
+}
+
+main section:nth-of-type(8) ul li:nth-of-type(1) img{
+    width: 13em;
+    display: block;
+    
+}
+
+main section:nth-of-type(8) ul li:nth-of-type(1) img:nth-of-type(2){
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+    
+main section:nth-of-type(8) ul li span {
+    position: absolute;
+    color: var(--color--wit);
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.prijzen{
+    display:flex;
+    gap:0.5em;
+    order: 3 !important;
+    font-family: var(--font-proxyma_bold);
+    
+}
+
+.prijzen p:nth-of-type(1){
+    color: var(--color--donkergrijs);
+    text-decoration: line-through;
+    font-size: 0.9em;
+}
+
+.prijzen p:nth-of-type(2){
+color: var(--color--paars);
+
+}
+
+
+
+
 
 /************************************************/
 /* POPULAIRE MERKEN 9*/
@@ -695,6 +789,8 @@ main section:nth-of-type(9) h2 {
 /************************************************/
 /* 24 ARTIKELEN VAN POPULAIRE MERKEN 10*/
 /************************************************/
+
+
 
 /************************************************/
 /* FOOTER */
