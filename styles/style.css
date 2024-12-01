@@ -269,13 +269,12 @@ main section:nth-of-type(7) ul li a img {
     margin-right: 0.8em;
 }
 
-
 /************************************************/
 /* LAYOUT SECTION 5,10 voor 3'ps
 /************************************************/
 main section:nth-of-type(5) ul li > p:nth-of-type(1),
 main section:nth-of-type(10) ul li > p:nth-of-type(1) {
-    color:var(--color--donkergrijs);
+    color: var(--color--donkergrijs);
     font-family: var(--font-proxyma);
     font-size: 0.9em;
     width: 15em; /* the element needs a fixed width (in px, em, %, etc) */
@@ -283,7 +282,6 @@ main section:nth-of-type(10) ul li > p:nth-of-type(1) {
     white-space: nowrap; /* don't break the line */
     text-overflow: ellipsis; /* give the beautiful '...' effect */
 }
-
 
 /************************************************/
 /* LAYOUT SECTION 4,5,8,9,10 */
@@ -318,7 +316,6 @@ main section:nth-of-type(10) ul {
     padding: 0;
 }
 
-
 main section:nth-of-type(4) ul li,
 main section:nth-of-type(5) ul li,
 main section:nth-of-type(8) ul li,
@@ -327,7 +324,6 @@ main section:nth-of-type(10) ul li {
     display: flex;
     flex-direction: column;
 }
-
 
 main section:nth-of-type(4) ul li h3,
 main section:nth-of-type(5) ul li h3,
@@ -339,7 +335,7 @@ main section:nth-of-type(10) ul li h4 {
     margin-bottom: 0.2em;
 }
 
-main section:nth-of-type(10) ul li h4{
+main section:nth-of-type(10) ul li h4 {
     margin-top: 0;
     font-size: 0.8em;
     font-family: var(--font-proxyma_bold);
@@ -400,8 +396,6 @@ main section:nth-of-type(10) ul li h3 a {
     font-family: var(--font-saint_laurent);
 }
 
-
-
 main section:nth-of-type(4) ul li > p,
 main section:nth-of-type(5) ul li > p,
 main section:nth-of-type(8) ul li > p,
@@ -419,16 +413,15 @@ main section:nth-of-type(10) ul li > p {
     color: var(--color--zwart);
 }
 
-main section:nth-of-type(8) ul li >p:nth-of-type(1){
-    color:var(--color--donkergrijs);
+main section:nth-of-type(8) ul li > p:nth-of-type(1) {
+    color: var(--color--donkergrijs);
     margin: 0;
     font-size: 0.9em;
 }
 
-main section:nth-of-type(8) ul li >p:nth-of-type(2){
+main section:nth-of-type(8) ul li > p:nth-of-type(2) {
     font-family: var(--font-proxyma_bold);
 }
-
 
 /************************************************/
 /* LABEL */
@@ -448,21 +441,18 @@ main section:nth-of-type(8) ul li >p:nth-of-type(2){
     width: fit-content !important;
 }
 
-.label.paars{
+.label.paars {
     background-color: var(--color--paars);
     color: var(--color--wit);
 }
 main section:nth-of-type(6) .label {
-
     background-color: var(--color--wit);
 }
 
 main section:nth-of-type(8) .label,
 main section:nth-of-type(10) .label {
-
-    bottom:0.5em;
+    bottom: 0.5em;
 }
-
 
 /************************************************/
 /* ONTDEK DE DAMES CATEGORIEEN */
@@ -734,7 +724,7 @@ main section:nth-of-type(7) ul li p:nth-of-type(2) {
 
 main section:nth-of-type(7) h3 {
     font-family: var(--font-proxyma);
-    margin-top:  0.6em;
+    margin-top: 0.6em;
     margin-bottom: 0.5em;
     color: var(--color--zwart);
 }
@@ -743,46 +733,44 @@ main section:nth-of-type(7) h3 {
 /* NIEUWE MERKEN 8*/
 /************************************************/
 
-main section:nth-of-type(8){
+main section:nth-of-type(8) {
     padding-top: 1.5em;
     background-color: var(--color--wit);
 }
 
-main section:nth-of-type(8) h2{
-margin-bottom: 1.5em;
+main section:nth-of-type(8) h2 {
+    margin-bottom: 1.5em;
 }
 main section:nth-of-type(8) ul li:nth-of-type(1),
-main section:nth-of-type(8) ul li:nth-of-type(5){
+main section:nth-of-type(8) ul li:nth-of-type(5) {
     margin-right: 0.8em;
 }
 
 main section:nth-of-type(8) ul li:nth-of-type(1) a,
-main section:nth-of-type(8) ul li:nth-of-type(5) a{
+main section:nth-of-type(8) ul li:nth-of-type(5) a {
     position: relative;
 }
 
 main section:nth-of-type(8) ul li:nth-of-type(1) img,
-main section:nth-of-type(8) ul li:nth-of-type(5) img{
+main section:nth-of-type(8) ul li:nth-of-type(5) img {
     width: 13em;
     display: block;
-    
 }
 
-main section:nth-of-type(8) ul li:nth-of-type(5) span{
+main section:nth-of-type(8) ul li:nth-of-type(5) span {
     padding: 1.5em 0;
-   
 }
 
 main section:nth-of-type(8) ul li:nth-of-type(1) img:nth-of-type(2),
-main section:nth-of-type(8) ul li:nth-of-type(5) img:nth-of-type(2){
+main section:nth-of-type(8) ul li:nth-of-type(5) img:nth-of-type(2) {
     position: absolute;
     z-index: 1;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
 }
-    
+
 main section:nth-of-type(8) ul li span {
     position: absolute;
     text-align: center;
@@ -801,29 +789,25 @@ main section:nth-of-type(8) ul li span {
     text-decoration: underline;
 }
 
-
-.prijzen{
-    display:flex;
-    gap:0.5em;
+.prijzen {
+    display: flex;
+    gap: 0.5em;
     order: 3 !important;
     font-family: var(--font-proxyma_bold);
-    
 }
 
-.prijzen p{
+.prijzen p {
     margin-top: 0.3em;
 }
 
-.prijzen p:nth-of-type(1){
+.prijzen p:nth-of-type(1) {
     color: var(--color--donkergrijs);
     text-decoration: line-through;
 }
 
-.prijzen p:nth-of-type(2){
-color: var(--color--paars);
-
+.prijzen p:nth-of-type(2) {
+    color: var(--color--paars);
 }
-
 
 /************************************************/
 /* POPULAIRE MERKEN 9*/
@@ -833,27 +817,26 @@ main section:nth-of-type(9) {
     padding-top: 1.5em;
 }
 
-main section:nth-of-type(9) h2{
+main section:nth-of-type(9) h2 {
     margin-left: 1em;
     margin-bottom: 1.3em;
 }
-main section:nth-of-type(9) img:nth-of-type(2){
+main section:nth-of-type(9) img:nth-of-type(2) {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    top:0;
+    top: 0;
     left: 0;
     padding: 1.5em;
     opacity: 90%;
 }
 
-main section:nth-of-type(9) li{
+main section:nth-of-type(9) li {
     margin-right: 1em;
- 
 }
 
-main section:nth-of-type(9) li a{
+main section:nth-of-type(9) li a {
     position: relative;
     overflow: hidden;
     display: block;
@@ -862,7 +845,7 @@ main section:nth-of-type(9) li a{
 }
 
 main section:nth-of-type(9) ul,
-main section:nth-of-type(8) ul{
+main section:nth-of-type(8) ul {
     margin: 0 !important;
     padding: 0;
 }
@@ -874,13 +857,13 @@ main section:nth-of-type(10) {
     padding-top: 1.5em;
 }
 
-main section:nth-of-type(10) h2{
+main section:nth-of-type(10) h2 {
     font-size: 1.8em;
     max-width: 20ch;
     margin-bottom: 0.5em;
 }
 
-main section:nth-of-type(10) header a{
+main section:nth-of-type(10) header a {
     text-decoration: none;
     color: var(--color--zwart);
     font-family: var(--font-proxyma_bold);
@@ -902,22 +885,27 @@ footer h2 {
     display: none;
 }
 
-footer section ul{
+footer section ul {
     list-style: none;
+    /* max-width: 33%; */
 }
 
-footer section li{
+footer section li {
     display: flex;
     align-items: center;
     gap: 0.5em;
     margin-bottom: 1.3em;
+    position: relative;
 }
 
-footer section:nth-of-type(1) img{
-width: 1.6em;
+footer section li:nth-of-type(1) {
+    margin-bottom: 0;
+}
+footer section:nth-of-type(1) img {
+    width: 1.6em;
 }
 
-footer section a{
+footer section a {
     text-decoration: none;
     font-size: 0.9em;
     color: var(--color--zwart);
@@ -929,10 +917,81 @@ footer h3 {
     font-family: var(--font-saint_laurent);
 }
 
-footer section:nth-of-type(2){
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
+footer ul h3 + img {
+    position: absolute;
+    width: 4em;
+    opacity: 4%;
+}
+
+footer section:nth-of-type(2) {
     background-color: var(--color--wit);
     padding-top: 1em;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+footer section:nth-of-type(2) a {
+    border-bottom: 0.1em solid var(--color--zwart);
+}
+
+footer div {
+    margin-top: -1em;
+    color: var(--color--donkergrijs);
+    font-size: 0.9em;
+}
+
+footer div p:nth-of-type(2) {
+    margin-left: 2em;
+}
+
+footer div img {
+    transform: translateY(0.7em);
+}
+
+footer section:nth-of-type(3) h3 {
+    display: none;
+}
+
+footer section:nth-of-type(3) {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2em 1.1em;
+    padding: 3em;
+    justify-content: center;
+}
+
+footer section:nth-of-type(5) h3 {
+    display: none;
+}
+footer section:nth-of-type(5) {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2em 1.1em;
+    padding: 3em;
+    justify-content: center;
+}
+
+footer >img{
+    width: 3em;
+    margin: auto;
+    display: block;
+    margin-top: -2em;
 }
 
 
-/* footer section:nth-of-type(2) */
+footer >ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap:0.3em;
+    padding: 0 4em;
+} 
+
+footer >ul a{
+text-decoration: none;
+color: var(--color--zwart);
+font-size: 0.8em;
+}
