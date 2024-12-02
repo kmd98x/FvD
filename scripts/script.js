@@ -31,9 +31,12 @@
 
 
 function footerLinks () {
-    const footerHeadings = document.querySelectorAll("footer .header-link");
+    const footerHeadings = document.querySelectorAll("footer .link-header");
 
     footerHeadings.forEach(heading => {
+        const links = heading.nextElementSibling
+        console.log(links)
+
         heading.addEventListener("click", () => {
             console.log("clicked")
 
