@@ -77,6 +77,8 @@ body {
 /************************************************/
 /* HEADER */
 /************************************************/
+
+
 header section h2 {
     display: none;
 }
@@ -97,8 +99,10 @@ header section a {
     font-family: var(--font-proxyma);
 }
 
-header section a:first-child,
-header section a:last-child {
+
+
+header section a:nth-of-type(1),
+header section a:nth-of-type(3) {
     display: none;
 }
 
@@ -462,6 +466,7 @@ main section:nth-of-type(10) .label {
     display: flex;
     margin-left: 0.8em;
     max-width: 20ch;
+    margin-bottom: 1em;
 }
 
 .ladies-category ul {
@@ -553,6 +558,7 @@ main section:nth-of-type(2) button {
     border: none;
     font-size: 0.9em;
     order: 3;
+    color: var(--color--zwart);
 }
 
 /************************************************/
@@ -821,6 +827,12 @@ main section:nth-of-type(9) h2 {
     margin-left: 1em;
     margin-bottom: 1.3em;
 }
+
+main section:nth-of-type(9) img:nth-of-type(1){
+width: 100%;
+height: 100%;
+}
+
 main section:nth-of-type(9) img:nth-of-type(2) {
     position: absolute;
     width: 100%;
@@ -898,7 +910,8 @@ footer section li {
     position: relative;
 }
 
-footer section li:nth-of-type(1) {
+footer section:nth-of-type(2) ul li:nth-of-type(1),
+footer section:nth-of-type(4) ul li:nth-of-type(1) {
     margin-bottom: 0;
 }
 footer section:nth-of-type(1) img {
@@ -915,6 +928,17 @@ footer section a {
 footer h3 {
     display: block;
     font-family: var(--font-saint_laurent);
+}
+
+footer section:nth-of-type(4) ul{
+    padding: 0 2em;
+}
+
+footer h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
@@ -995,3 +1019,11 @@ text-decoration: none;
 color: var(--color--zwart);
 font-size: 0.8em;
 }
+
+
+
+/****************************************************************/
+/****************************************************************/
+/* DETAIL PAGINA */
+/****************************************************************/
+/****************************************************************/
