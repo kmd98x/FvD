@@ -12,6 +12,9 @@ body {
     font-family: var(--font-proxyma);
 }
 
+p a{
+    text-decoration: none;
+}
 /* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
 @font-face {
     font-family: "proxyma";
@@ -1027,3 +1030,5 @@ font-size: 0.8em;
 /* DETAIL PAGINA */
 /****************************************************************/
 /****************************************************************/
+
+
