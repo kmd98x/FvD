@@ -12,7 +12,7 @@ body {
     font-family: var(--font-proxyma);
 }
 
-p a{
+p a {
     text-decoration: none;
 }
 /* font toevoegen: https://www.w3schools.com/css/css3_fonts.asp */
@@ -81,7 +81,6 @@ p a{
 /* HEADER */
 /************************************************/
 
-
 header section h2 {
     display: none;
 }
@@ -101,8 +100,6 @@ header section a {
     padding: 0.1em;
     font-family: var(--font-proxyma);
 }
-
-
 
 header section a:nth-of-type(1),
 header section a:nth-of-type(3) {
@@ -831,9 +828,9 @@ main section:nth-of-type(9) h2 {
     margin-bottom: 1.3em;
 }
 
-main section:nth-of-type(9) img:nth-of-type(1){
-width: 100%;
-height: 100%;
+main section:nth-of-type(9) img:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
 }
 
 main section:nth-of-type(9) img:nth-of-type(2) {
@@ -933,11 +930,11 @@ footer h3 {
     font-family: var(--font-saint_laurent);
 }
 
-footer section:nth-of-type(4) ul{
+footer section:nth-of-type(4) ul {
     padding: 0 2em;
 }
 
-footer h4{
+footer h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -999,31 +996,28 @@ footer section:nth-of-type(5) {
     justify-content: center;
 }
 
-footer >img{
+footer > img {
     width: 3em;
     margin: auto;
     display: block;
     margin-top: -2em;
 }
 
-
-footer >ul{
+footer > ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-    gap:0.3em;
+    gap: 0.3em;
     padding: 0 4em;
-} 
-
-footer >ul a{
-text-decoration: none;
-color: var(--color--zwart);
-font-size: 0.8em;
 }
 
-
+footer > ul a {
+    text-decoration: none;
+    color: var(--color--zwart);
+    font-size: 0.8em;
+}
 
 /****************************************************************/
 /****************************************************************/
@@ -1031,4 +1025,83 @@ font-size: 0.8em;
 /****************************************************************/
 /****************************************************************/
 
+.detailpagina header{
+    background-color: var(--color--wit);
+    padding: 1em 0 1em 0;
+}
 
+.detailpagina a img {
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.detailpagina a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--color--zwart);
+    background-color: var(--color--wit);
+}
+.detailpagina a:nth-of-type(1) {
+    display: block;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.detailpagina a:nth-of-type(2) {
+    display: none;
+}
+
+.detailpagina a span {
+    display: none;
+}
+
+.detailpagina section:nth-of-type(1) h2 {
+    display: none;
+}
+
+
+/************************************************/
+/* PRODUCT FOTOS */
+/************************************************/
+
+
+section:nth-of-type(1) div ul:nth-of-type(1){
+    overflow-x: scroll;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+section:nth-of-type(1) div ul:nth-of-type(2){
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0;
+    margin: 0;
+}
+
+section:nth-of-type(1) div ul:nth-of-type(1) img{
+    width: 23em;
+}
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+section:nth-of-type(1){
+    flex-flow: row wrap;
+    gap: 1em;
+    
+}
+
+
+
+/* section:nth-of-type(1) ul li{
+    display: flex;
+    width: fit-content;
+}
+
+section:nth-of-type(1) ul li img{
+    width: 100%;
+} */
