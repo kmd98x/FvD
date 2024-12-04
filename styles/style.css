@@ -1025,7 +1025,7 @@ footer > ul a {
 /****************************************************************/
 /****************************************************************/
 
-.detailpagina header{
+.detailpagina header {
     background-color: var(--color--wit);
     padding: 1em 0 1em 0;
 }
@@ -1060,13 +1060,22 @@ footer > ul a {
     display: none;
 }
 
-
 /************************************************/
 /* PRODUCT FOTOS */
 /************************************************/
 
+section:nth-of-type(1) div {
+    position: relative;
+}
 
-section:nth-of-type(1) div ul:nth-of-type(1){
+section:nth-of-type(1) div > img {
+    position: absolute;
+    width: 2em;
+    top: 28em;
+    right: 0;
+}
+
+section:nth-of-type(1) div ul:nth-of-type(1) {
     overflow-x: scroll;
     display: flex;
     list-style: none;
@@ -1075,33 +1084,89 @@ section:nth-of-type(1) div ul:nth-of-type(1){
     width: 100%;
 }
 
-section:nth-of-type(1) div ul:nth-of-type(2){
+section:nth-of-type(1) div ul:nth-of-type(2) {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     padding: 0;
     margin: 0;
 }
 
-section:nth-of-type(1) div ul:nth-of-type(1) img{
+section:nth-of-type(1) div ul:nth-of-type(1) img {
     width: 23em;
 }
 
-
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
-section:nth-of-type(1){
+section:nth-of-type(1) {
     flex-flow: row wrap;
     gap: 1em;
+}
+
+aside{
+    padding: 2em 1em;
+    background-color: var(--color--wit);
+}
+
+aside h2{
+    display: block !important;
+}
+
+aside p:nth-of-type(1){
+    font-size: 0.8em;
+    color: var(--color--donkergrijs);
+}
+
+aside p:nth-of-type(2){
+    color: var(--color--donkergrijs);
+}
+
+aside p:nth-of-type(3){
+    font-family: var(--font-proxyma_bold);
+}
+
+aside button{
+    color:var(--color--wit);
+    background-color: var(--color-oranje);
+    border: none;
+    padding: 1em 9em;
+}
+
+aside img{
+    width: 1.2em;
+    border-radius: solid var(--color--zwart) 1em;
+}
+
+aside p:nth-of-type(6){
+background-color: var(--color--lichtbeige);
+color: var(--color--donkergrijs);
+font-size: 0.75em;
+}
+
+aside p:nth-of-type(6) a{
+    text-decoration: underline;
+    font-family: var(--font-proxyma_bold);
+    font-size: 1em;
+}
+
+aside img:nth-of-type(2),
+aside img:nth-of-type(3),
+aside img:nth-of-type(4),
+aside img:nth-of-type(5),
+aside img:nth-of-type(6),
+aside img:nth-of-type(7){
+width: 1em;
+}
+
+
+aside p:nth-of-type(7),
+aside p:nth-of-type(8){
+font-family: var(--font-proxyma_bold);
+}
+
+/************************************************/
+/* BEKIJK MEER */
+/************************************************/
+
+section:nth-of-type(2){
     
 }
-
-
-
-/* section:nth-of-type(1) ul li{
-    display: flex;
-    width: fit-content;
-}
-
-section:nth-of-type(1) ul li img{
-    width: 100%;
-} */
