@@ -89,7 +89,6 @@ p a {
 /****************************************************************/
 /****************************************************************/
 
-
 /* /------------------------------------------------/
 /------------------------------------------------/
                     HEADER 
@@ -189,13 +188,13 @@ header form {
 header form input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--color-border_bottom_searchbar);
+    border-bottom: 1px solid var(--color--donkerbeige);
     padding: var(--spacing-12);
 }
 
 /* Bron: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 header form input::placeholder {
-    color: var(--color-text);
+    color: var(--color--donkergrijs);
 }
 
 header form img {
@@ -308,7 +307,6 @@ main section:nth-of-type(10) ul li > p:nth-of-type(1) {
     white-space: nowrap; /* don't break the line */
     text-overflow: ellipsis; /* give the beautiful '...' effect */
 }
-
 
 /* /------------------------------------------------/
 /------------------------------------------------/
@@ -458,7 +456,6 @@ main section:nth-of-type(8) ul li > p:nth-of-type(2) {
  /------------------------------------------------/
 /------------------------------------------------/ */
 
-
 .label {
     position: absolute;
     z-index: 2;
@@ -542,6 +539,12 @@ main section:nth-of-type(10) .label {
     font-family: var(--font-saint_laurent);
 }
 
+/* /------------------------------------------------/
+/------------------------------------------------/
+                    VIDEO 
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(2) {
     min-height: 32.2svh;
     position: relative;
@@ -564,7 +567,7 @@ main section:nth-of-type(2) video {
     height: 100%;
 }
 
-main section:nth-of-type(2) p,
+main section:nth-of-type(2) p:nth-of-type(1),
 main section:nth-of-type(2) h2 {
     margin: 0;
     color: white;
@@ -578,7 +581,7 @@ main section:nth-of-type(2) h2 {
     font-size: 1.7em;
 }
 
-main section:nth-of-type(2) p {
+main section:nth-of-type(2) p:nth-of-type(1) {
     order: 1;
     font-size: 0.9em;
 }
@@ -590,6 +593,10 @@ main section:nth-of-type(2) button {
     font-size: 0.9em;
     order: 3;
     color: var(--color--zwart);
+}
+
+main section:nth-of-type(2) p:nth-of-type(2) {
+    display: none;
 }
 
 /* /------------------------------------------------/
@@ -605,7 +612,7 @@ main section:nth-of-type(7) header a {
     padding-bottom: 0.1em;
     font-size: 0.85em;
     color: black;
-    font-weight: 500;
+    font-family: var(--font-proxyma_bold);
     display: block;
     width: fit-content;
     margin-top: 1.4em;
@@ -1073,8 +1080,36 @@ footer > ul a {
 /* 455 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 455px) {
-    .ladies-category a p{
+
+    .ladies-category h2 {
+        max-width: 30ch;
+    }
+
+    .ladies-category a img {
+        width: 13em;
+    }
+    
+    .ladies-category a p {
         font-size: 1.2em;
+    }
+
+    main section:nth-of-type(2) {
+        min-height: 39svh;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    main section:nth-of-type(3) header a, main section:nth-of-type(7) header a {
+        font-size: 0.93em;
+        font-family: var(--font-proxyma_bold);
+        
+    }
+
+    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+        width: 18.7em;
+       
     }
 
     footer > ul {
@@ -1086,7 +1121,6 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
-
     .ladies-category h2 {
         display: flex;
         margin-left: 0.8em;
@@ -1099,12 +1133,18 @@ footer > ul a {
         overflow-x: scroll;
         white-space: nowrap;
         gap: 0.6em;
-        
     }
 
-    .ladies-category a img{
-        width: 11em; 
+    .ladies-category a img {
+        width: 11.7em;
+        /* goeie code om fotos groter te maken? want was anders  */
     }
+}
+
+main section:nth-of-type(2)p:nth-of-type(2) {
+    /* hoe maak ik video groter zonder dat hij ingezoomt wordt? */
+    display: block !important;
+    /* werkt niet? */
 }
 
 /************************************************/
@@ -1392,4 +1432,3 @@ width: 1em;
             BEKIJK MEER
  /------------------------------------------------/
 /------------------------------------------------/ */
-
