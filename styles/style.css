@@ -97,6 +97,7 @@ p a {
 
 header section h2 {
     display: none;
+    
 }
 
 header > section {
@@ -448,6 +449,7 @@ main section:nth-of-type(8) ul li > p:nth-of-type(1) {
 
 main section:nth-of-type(8) ul li > p:nth-of-type(2) {
     font-family: var(--font-proxyma_bold);
+    font-size: 0.9em;
 }
 
 /* /------------------------------------------------/
@@ -492,7 +494,7 @@ main section:nth-of-type(10) .label {
 .ladies-category h2 {
     display: flex;
     margin-left: 0.8em;
-    max-width: 20ch;
+    max-width: 30ch;
     margin-bottom: 1em;
 }
 
@@ -547,6 +549,7 @@ main section:nth-of-type(10) .label {
 
 main section:nth-of-type(2) {
     min-height: 32.2svh;
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -670,6 +673,7 @@ main section:nth-of-type(5) ul li > p {
     order: 2;
     margin-top: 0.2em;
     font-family: var(--font-proxyma_bold);
+    font-size: 0.9em;
 }
 
 main section:nth-of-type(4) ul li > p:nth-of-type(1),
@@ -1136,37 +1140,39 @@ footer > ul a {
         width: 11.3em;
         /* goeie code om fotos groter te maken? want was anders  */
     }
+
+    main section:nth-of-type(2){
+        min-height: 68svh;
+    }
+    
+    main section:nth-of-type(2)p:nth-of-type(2) {
+        display: block !important;
+        /* werkt niet? */
+    }
+    
+    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+        width: 19.8em;
+    }
+    
+    main section:nth-of-type(3) p {
+        font-size: 1.4em;
+    }
+    
+    main section:nth-of-type(9) h2 {
+        margin-left: 1em;
+        margin-bottom: 0.9em;
+    }
+    
+    main section:nth-of-type(9) li a{
+        width: 20em;
+    }
+    
+    main section:nth-of-type(10) h2 {
+        max-width: 40ch;
+    }
 }
 
-main section:nth-of-type(2){
-    min-height: 68svh;
-}
 
-main section:nth-of-type(2)p:nth-of-type(2) {
-    display: block !important;
-    /* werkt niet? */
-}
-
-main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
-    width: 19.8em;
-}
-
-main section:nth-of-type(3) p {
-    font-size: 1.4em;
-}
-
-main section:nth-of-type(9) h2 {
-    margin-left: 1em;
-    margin-bottom: 0.9em;
-}
-
-main section:nth-of-type(9) li a{
-    width: 20em;
-}
-
-main section:nth-of-type(10) h2 {
-    max-width: 40ch;
-}
 
 /* footer met 3 checks , de laatste moet rechst staan*/
 
@@ -1199,18 +1205,20 @@ main section:nth-of-type(10) h2 {
     main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
         width: 22em;
     }
+
+    main section:nth-of-type(9) li a{
+        width: 22em;
+    }
+    
+    main section:nth-of-type(10) h2 {
+        max-width: 30ch;
+    }
+    
+    /* footer met 3 checks , de laatste moet rechst staan*/
+    /* regel hetzelf onder elkaar */
+    
 }
 
-main section:nth-of-type(9) li a{
-    width: 22em;
-}
-
-main section:nth-of-type(10) h2 {
-    max-width: 30ch;
-}
-
-/* footer met 3 checks , de laatste moet rechst staan*/
-/* regel hetzelf onder elkaar */
 
 
 
