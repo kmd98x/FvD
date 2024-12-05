@@ -29,21 +29,17 @@
 
 
 
+const listHeadings = document.querySelectorAll('footer section div h4');
 
-function footerLinks () {
-    const footerHeadings = document.querySelectorAll("footer .link-header");
+listHeadings.forEach((heading) => {
+	const list = heading.nextElementSibling;
 
-    footerHeadings.forEach(heading => {
-        const links = heading.nextElementSibling
-        console.log(links)
+	heading.addEventListener('click', () => {
+		list.classList.toggle('show');
+        console.log("clicked")
+	});
+});
 
-        heading.addEventListener("click", () => {
-            console.log("clicked")
 
-            
-        })
-    })
 
-}
 
-footerLinks()

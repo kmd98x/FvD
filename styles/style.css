@@ -969,12 +969,18 @@ footer section li {
     gap: 0.5em;
     margin-bottom: 1.3em;
     position: relative;
+
 }
 
 footer section:nth-of-type(2) ul li:nth-of-type(1),
 footer section:nth-of-type(4) ul li:nth-of-type(1) {
-    margin-bottom: 0;
+    margin-bottom: 0em;
 }
+
+footer section:nth-of-type(4) div ul li:nth-of-type(1){
+    margin-bottom: 1.3em;
+}
+
 footer section:nth-of-type(1) img {
     width: 1.6em;
 }
@@ -982,8 +988,9 @@ footer section:nth-of-type(1) img {
 footer section a {
     text-decoration: none;
     font-size: 0.9em;
-    color: var(--color--zwart);
-    font-family: var(--font-proxyma_bold);
+    color: var(--color--donkergrijs);
+    font-family: var(--font-proxyma);
+    
 }
 
 footer h3 {
@@ -991,8 +998,16 @@ footer h3 {
     font-family: var(--font-saint_laurent);
 }
 
-footer section:nth-of-type(4) ul {
+footer section:nth-of-type(4){
     padding: 0 2em;
+}
+    
+
+footer section:nth-of-type(4) ul {
+    border-bottom: 0.1em solid var(--color--donkerbeige);
+    padding: 0;
+    height: 0;
+	overflow: hidden;
 }
 
 footer h4 {
@@ -1000,6 +1015,10 @@ footer h4 {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    color: var(--color--zwart);
+    font-size: 0.95em;
+    /* padding: 0 2em; */
+    margin-top: 3em;
 }
 
 /*Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
@@ -1072,6 +1091,7 @@ footer > ul {
     flex-flow: wrap;
     gap: 0.3em;
     padding: 0 4em;
+
 }
 
 footer > ul a {
@@ -1079,6 +1099,11 @@ footer > ul a {
     color: var(--color--zwart);
     font-size: 0.8em;
 }
+
+.show {
+	height: 100% !important;
+}
+
 
 /************************************************/
 /* 455 PX INDEX MEDIA QUERY */
