@@ -121,6 +121,10 @@ header section a:nth-of-type(3) {
     display: none;
 }
 
+header section  a:nth-of-type(1){
+    display: block !important;
+}
+
 header section a:hover {
     color: var(--color-header-text-hover);
 }
@@ -1123,7 +1127,7 @@ footer > ul a {
     }
 
     main section:nth-of-type(2) {
-        min-height: 39svh;
+        min-height: 49svh;
     }
 
     h2 {
@@ -1142,6 +1146,10 @@ footer > ul a {
 
     footer > ul {
         padding: 0 3em;
+    }
+
+    main section:nth-of-type(10) h2 {
+        max-width: 40ch;
     }
 }
 
@@ -1543,3 +1551,27 @@ width: 1em;
             BEKIJK MEER
  /------------------------------------------------/
 /------------------------------------------------/ */
+
+
+/* /------------------------------------------------/
+/------------------------------------------------/
+            CSS VAN JS HART BUTTON
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
+main section:nth-of-type(4) button img:nth-of-type(2),
+main section:nth-of-type(5) button img:nth-of-type(2){
+    display: none;
+}
+	
+main section:nth-of-type(4) button.liked img:nth-of-type(2),
+main section:nth-of-type(5) button.liked img:nth-of-type(2){
+    display: block;
+}
+
+main section:nth-of-type(4) button.liked img:nth-of-type(1),
+main section:nth-of-type(5) button.liked img:nth-of-type(1){
+    display: none;
+}
+
+
