@@ -97,7 +97,6 @@ p a {
 
 header section h2 {
     display: none;
-    
 }
 
 header > section {
@@ -121,7 +120,7 @@ header section a:nth-of-type(3) {
     display: none;
 }
 
-header section  a:nth-of-type(1){
+header section a:nth-of-type(1) {
     display: block !important;
 }
 
@@ -973,7 +972,6 @@ footer section li {
     gap: 0.5em;
     margin-bottom: 1.3em;
     position: relative;
-
 }
 
 footer section:nth-of-type(2) ul li:nth-of-type(1),
@@ -981,7 +979,7 @@ footer section:nth-of-type(4) ul li:nth-of-type(1) {
     margin-bottom: 0em;
 }
 
-footer section:nth-of-type(4) div ul li:nth-of-type(1){
+footer section:nth-of-type(4) div ul li:nth-of-type(1) {
     margin-bottom: 1.3em;
 }
 
@@ -992,9 +990,8 @@ footer section:nth-of-type(1) img {
 footer section a {
     text-decoration: none;
     font-size: 0.9em;
-    color: var(--color--donkergrijs);
+    color: var(--color--zwart);
     font-family: var(--font-proxyma);
-    
 }
 
 footer h3 {
@@ -1002,16 +999,15 @@ footer h3 {
     font-family: var(--font-saint_laurent);
 }
 
-footer section:nth-of-type(4){
+footer section:nth-of-type(4) {
     padding: 0 2em;
 }
-    
 
 footer section:nth-of-type(4) ul {
     border-bottom: 0.1em solid var(--color--donkerbeige);
     padding: 0;
     height: 0;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 footer h4 {
@@ -1095,7 +1091,6 @@ footer > ul {
     flex-flow: wrap;
     gap: 0.3em;
     padding: 0 4em;
-
 }
 
 footer > ul a {
@@ -1105,15 +1100,13 @@ footer > ul a {
 }
 
 .show {
-	height: 100% !important;
+    height: 100% !important;
 }
-
 
 /************************************************/
 /* 455 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 455px) {
-
     .ladies-category h2 {
         max-width: 30ch;
     }
@@ -1121,7 +1114,7 @@ footer > ul a {
     .ladies-category a img {
         width: 13em;
     }
-    
+
     .ladies-category a p {
         font-size: 1.2em;
     }
@@ -1134,13 +1127,15 @@ footer > ul a {
         font-size: 1.7em;
     }
 
-    main section:nth-of-type(3) header a, main section:nth-of-type(7) header a {
+    main section:nth-of-type(3) header a,
+    main section:nth-of-type(7) header a {
         font-size: 0.93em;
         font-family: var(--font-proxyma_bold);
-        
     }
 
-    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
         width: 18.7em;
     }
 
@@ -1157,7 +1152,6 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
-
     .ladies-category h2 {
         max-width: 40ch;
     }
@@ -1171,41 +1165,50 @@ footer > ul a {
 
     .ladies-category a img {
         width: 11.3em;
-        /* goeie code om fotos groter te maken? want was anders  */
     }
 
-    main section:nth-of-type(2){
-        min-height: 68svh;
+    main section:nth-of-type(2) {
+        min-height: 78svh;
     }
-    
-    main section:nth-of-type(2)p:nth-of-type(2) {
+
+    main section:nth-of-type(2) p:nth-of-type(2) {
         display: block !important;
-        /* werkt niet? */
+        color: var(--color--wit);
+        text-align: center;
+        font-size: 1.1em;
+        order: 2;
+        margin-top: 0;
     }
-    
-    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
         width: 19.8em;
     }
-    
+
     main section:nth-of-type(3) p {
         font-size: 1.4em;
     }
-    
+
     main section:nth-of-type(9) h2 {
         margin-left: 1em;
         margin-bottom: 0.9em;
     }
-    
-    main section:nth-of-type(9) li a{
+
+    main section:nth-of-type(9) li a {
         width: 20em;
     }
-    
+
     main section:nth-of-type(10) h2 {
         max-width: 40ch;
     }
+
+    footer section:nth-of-type(1) ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+    }
 }
-
-
 
 /* footer met 3 checks , de laatste moet rechst staan*/
 
@@ -1213,7 +1216,6 @@ footer > ul a {
 /* 536 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 536px) {
-
     /* waar ben je naar opzoek is gecentreerd
     header form {
         margin-top: 1em;
@@ -1231,29 +1233,27 @@ footer > ul a {
         /* goeie code om fotos groter te maken? want was anders  */
     }
 
-    main section:nth-of-type(2){
+    main section:nth-of-type(2) {
         min-height: 60svh;
     }
 
-    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
         width: 22em;
     }
 
-    main section:nth-of-type(9) li a{
+    main section:nth-of-type(9) li a {
         width: 22em;
     }
-    
+
     main section:nth-of-type(10) h2 {
         max-width: 30ch;
     }
-    
+
     /* footer met 3 checks , de laatste moet rechst staan*/
     /* regel hetzelf onder elkaar */
-    
 }
-
-
-
 
 /************************************************/
 /* 600 PX INDEX MEDIA QUERY */
@@ -1264,18 +1264,19 @@ footer > ul a {
         /* goeie code om fotos groter te maken? want was anders  */
     }
 
-    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
         width: 24.5em;
     }
-    
-    main section:nth-of-type(9) li a{
+
+    main section:nth-of-type(9) li a {
         width: 24em;
     }
 
     main section:nth-of-type(10) h2 {
         max-width: 40ch;
     }
-
 }
 
 /************************************************/
@@ -1294,6 +1295,18 @@ footer > ul a {
 /* 992 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 992px) {
+    main section:nth-of-type(4),
+    main section:nth-of-type(5) {
+        display: flex;
+        align-items: center;
+    }
+
+    main section:nth-of-type(4) header,
+    main section:nth-of-type(5) header{
+        width: 30em;
+        font-size: 1.2em;
+        margin-right: 4em;
+    }
 }
 
 /****************************************************************/
@@ -1552,7 +1565,6 @@ width: 1em;
  /------------------------------------------------/
 /------------------------------------------------/ */
 
-
 /* /------------------------------------------------/
 /------------------------------------------------/
             CSS VAN JS HART BUTTON
@@ -1560,18 +1572,16 @@ width: 1em;
 /------------------------------------------------/ */
 
 main section:nth-of-type(4) button img:nth-of-type(2),
-main section:nth-of-type(5) button img:nth-of-type(2){
+main section:nth-of-type(5) button img:nth-of-type(2) {
     display: none;
 }
-	
+
 main section:nth-of-type(4) button.liked img:nth-of-type(2),
-main section:nth-of-type(5) button.liked img:nth-of-type(2){
+main section:nth-of-type(5) button.liked img:nth-of-type(2) {
     display: block;
 }
 
 main section:nth-of-type(4) button.liked img:nth-of-type(1),
-main section:nth-of-type(5) button.liked img:nth-of-type(1){
+main section:nth-of-type(5) button.liked img:nth-of-type(1) {
     display: none;
 }
-
-
