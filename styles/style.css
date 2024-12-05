@@ -77,9 +77,24 @@ p a {
 
 /* jouw code */
 
-/************************************************/
-/* HEADER */
-/************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+/* 1e PAGINA */
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+/* /------------------------------------------------/
+/------------------------------------------------/
+                    HEADER 
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 header section h2 {
     display: none;
@@ -178,7 +193,7 @@ header form input {
     padding: var(--spacing-12);
 }
 
-/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+/* Bron: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 header form input::placeholder {
     color: var(--color-text);
 }
@@ -219,11 +234,13 @@ header form img {
     font-size: 0.7em;
 }
 
-/************************************************/
-/* MAIN */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+                    MAIN
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+/* Bron: https://www.a11yproject.com/posts/how-to-hide-content/ */
 main section h1 {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -238,9 +255,11 @@ main img {
     width: 100%;
 }
 
-/************************************************/
-/* LAYOUT SECTION 3,6,7 */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            LAYOUT SECTION 3,6 & 7 
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 main section:nth-of-type(3) ul,
 main section:nth-of-type(6) ul,
@@ -273,9 +292,12 @@ main section:nth-of-type(7) ul li a img {
     margin-right: 0.8em;
 }
 
-/************************************************/
-/* LAYOUT SECTION 5,10 voor 3'ps
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+        LAYOUT SECTION 5,10 voor 3'ps 
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(5) ul li > p:nth-of-type(1),
 main section:nth-of-type(10) ul li > p:nth-of-type(1) {
     color: var(--color--donkergrijs);
@@ -287,9 +309,12 @@ main section:nth-of-type(10) ul li > p:nth-of-type(1) {
     text-overflow: ellipsis; /* give the beautiful '...' effect */
 }
 
-/************************************************/
-/* LAYOUT SECTION 4,5,8,9,10 */
-/************************************************/
+
+/* /------------------------------------------------/
+/------------------------------------------------/
+        LAYOUT SECTION 4,5,8,9,10 
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 main section:nth-of-type(4),
 main section:nth-of-type(5),
@@ -427,9 +452,12 @@ main section:nth-of-type(8) ul li > p:nth-of-type(2) {
     font-family: var(--font-proxyma_bold);
 }
 
-/************************************************/
-/* LABEL */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+        LABEL STYLING 
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 
 .label {
     position: absolute;
@@ -458,9 +486,11 @@ main section:nth-of-type(10) .label {
     bottom: 0.5em;
 }
 
-/************************************************/
-/* ONTDEK DE DAMES CATEGORIEEN */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+        ONTDEK DE DAMES CATEGORIEEN  
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 .ladies-category h2 {
     display: flex;
@@ -509,6 +539,7 @@ main section:nth-of-type(10) .label {
     font-size: 1.25em;
     text-align: center;
     padding: 0 1em;
+    font-family: var(--font-saint_laurent);
 }
 
 main section:nth-of-type(2) {
@@ -561,9 +592,12 @@ main section:nth-of-type(2) button {
     color: var(--color--zwart);
 }
 
-/************************************************/
-/* DE SELECTIE VAN ONZE EDITORS 3 */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+        DE SELECTIE VAN ONZE EDITORS 3  
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(3) header a,
 main section:nth-of-type(7) header a {
     text-decoration: none;
@@ -616,9 +650,11 @@ main section:nth-of-type(3) ul li a:hover img {
     transform: scale(1.03);
 }
 
-/************************************************/
-/* SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5*/
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5  
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 main section:nth-of-type(4) ul li h3,
 main section:nth-of-type(5) ul li h3,
@@ -642,7 +678,7 @@ main section:nth-of-type(8) ul li > p:nth-of-type(1) {
     color: var(--color--donkergrijs);
 }
 
-/* https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css */
+/* Bron: https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css */
 
 main section:nth-of-type(4) ul li:nth-of-type(2),
 main section:nth-of-type(5) ul li p:nth-of-type(2) {
@@ -705,13 +741,12 @@ main section:nth-of-type(5) ul li:nth-of-type(2) p:nth-of-type(3) {
     font-family: var(--font-proxyma_bold);
 }
 
-/************************************************/
-/* WAT VIND JE VAN DEZE OUTFITS 6*/
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+             INSPIRATIE 7 
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
-/************************************************/
-/* INSPIRATIE 7*/
-/************************************************/
 main section:nth-of-type(7) a {
     font-family: var(--font-proxyma);
     text-decoration: none;
@@ -735,9 +770,11 @@ main section:nth-of-type(7) h3 {
     color: var(--color--zwart);
 }
 
-/************************************************/
-/* NIEUWE MERKEN 8*/
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            NIEUWE MERKEN 8
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 main section:nth-of-type(8) {
     padding-top: 1.5em;
@@ -815,9 +852,12 @@ main section:nth-of-type(8) ul li span {
     color: var(--color--paars);
 }
 
-/************************************************/
-/* POPULAIRE MERKEN 9*/
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            POPULAIRE MERKEN 9
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(9) {
     background-color: var(--color--wit);
     padding-top: 1.5em;
@@ -861,9 +901,13 @@ main section:nth-of-type(8) ul {
     margin: 0 !important;
     padding: 0;
 }
-/************************************************/
-/* 24 ARTIKELEN VAN POPULAIRE MERKEN 10*/
-/************************************************/
+
+/* /------------------------------------------------/
+/------------------------------------------------/
+        24 ARTIKELEN VAN POPULAIRE MERKEN 10
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(10) {
     background-color: var(--color--wit);
     padding-top: 1.5em;
@@ -883,16 +927,22 @@ main section:nth-of-type(10) header a {
     border-bottom: 0.1em solid var(--color--zwart);
 }
 
-/************************************************/
-/* DAMESMODE MERKEN*/
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            DAMESMODE MERKEN
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 main section:nth-of-type(11) {
     display: none;
 }
 
-/************************************************/
-/* FOOTER */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            FOOTER
+ /------------------------------------------------/
+/------------------------------------------------/ */
+
 footer h2 {
     display: none;
 }
@@ -941,7 +991,7 @@ footer h4 {
     width: 100%;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
+/*Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator */
 footer ul h3 + img {
     position: absolute;
     width: 4em;
@@ -1019,9 +1069,83 @@ footer > ul a {
     font-size: 0.8em;
 }
 
+/************************************************/
+/* 455 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 455px) {
+    .ladies-category a p{
+        font-size: 1.2em;
+    }
+
+    footer > ul {
+        padding: 0 3em;
+    }
+}
+
+/************************************************/
+/* 480 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 480px) {
+
+    .ladies-category h2 {
+        display: flex;
+        margin-left: 0.8em;
+        max-width: 40ch;
+        margin-bottom: 1em;
+    }
+
+    .ladies-category ul {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+        gap: 0.6em;
+        
+    }
+
+    .ladies-category a img{
+        width: 11em; 
+    }
+}
+
+/************************************************/
+/* 536 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 536px) {
+}
+
+/************************************************/
+/* 600 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 600px) {
+}
+
+/************************************************/
+/* 616 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 616px) {
+}
+
+/************************************************/
+/* 768 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 768px) {
+}
+
+/************************************************/
+/* 992 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 992px) {
+}
+
 /****************************************************************/
 /****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
 /* DETAIL PAGINA */
+
+/****************************************************************/
+/****************************************************************/
 /****************************************************************/
 /****************************************************************/
 
@@ -1060,9 +1184,11 @@ footer > ul a {
     display: none;
 }
 
-/************************************************/
-/* PRODUCT FOTOS */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            PRODUCT FOTOS
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
 section:nth-of-type(1) div {
     position: relative;
@@ -1096,75 +1222,71 @@ section:nth-of-type(1) div ul:nth-of-type(1) img {
     width: 23em;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+/* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
 section:nth-of-type(1) {
     flex-flow: row wrap;
     gap: 1em;
 }
 
-aside{
+aside {
     padding: 2em 1.5em;
     background-color: var(--color--wit);
-    
 }
 
-aside section:nth-of-type(1) p:nth-of-type(1){
+aside section:nth-of-type(1) p:nth-of-type(1) {
     font-size: 0.8em;
     color: var(--color--zwart);
 }
 
-aside section:nth-of-type(1) h2{
+aside section:nth-of-type(1) h2 {
     display: block !important;
     font-size: 1.8em;
     margin-top: -0.05em;
 }
 
-aside section:nth-of-type(1) p:nth-of-type(2){
+aside section:nth-of-type(1) p:nth-of-type(2) {
     font-size: 1em;
     color: var(--color--donkergrijs);
 }
 
-aside section:nth-of-type(1) p:nth-of-type(3){
+aside section:nth-of-type(1) p:nth-of-type(3) {
     font-family: var(--font-proxyma_bold);
 }
-    
-aside section:nth-of-type(2){
+
+aside section:nth-of-type(2) {
     display: flex;
     align-items: center;
     gap: 2em;
 }
 
-aside section:nth-of-type(3){
+aside section:nth-of-type(3) {
     display: flex;
     align-items: center;
 }
-    
-aside section:nth-of-type(3) button{
-    color:var(--color--wit);
+
+aside section:nth-of-type(3) button {
+    color: var(--color--wit);
     background-color: var(--color-oranje);
     border: none;
     padding: 1em 8em;
     white-space: nowrap;
 }
 
-aside section:nth-of-type(3) img{
+aside section:nth-of-type(3) img {
     width: 1.1em;
     border: solid var(--color--donkergrijs) 0.1em;
     border-radius: 100%;
 }
 
-
 aside p:nth-of-type(1),
-aside p:nth-of-type(2){
-font-family: var(--font-proxyma_bold);
-} 
-
-
-aside img:nth-of-type(1),
-aside img:nth-of-type(2){
-    width: 1em;
+aside p:nth-of-type(2) {
+    font-family: var(--font-proxyma_bold);
 }
 
+aside img:nth-of-type(1),
+aside img:nth-of-type(2) {
+    width: 1em;
+}
 
 /* aside h2{
     
@@ -1265,10 +1387,9 @@ aside img:nth-of-type(7){
 width: 1em;
 } */
 
-
-
-
-/************************************************/
-/* BEKIJK MEER */
-/************************************************/
+/* /------------------------------------------------/
+/------------------------------------------------/
+            BEKIJK MEER
+ /------------------------------------------------/
+/------------------------------------------------/ */
 
