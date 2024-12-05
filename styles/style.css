@@ -1109,7 +1109,6 @@ footer > ul a {
 
     main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
         width: 18.7em;
-       
     }
 
     footer > ul {
@@ -1121,11 +1120,9 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
+
     .ladies-category h2 {
-        display: flex;
-        margin-left: 0.8em;
         max-width: 40ch;
-        margin-bottom: 1em;
     }
 
     .ladies-category ul {
@@ -1136,27 +1133,108 @@ footer > ul a {
     }
 
     .ladies-category a img {
-        width: 11.7em;
+        width: 11.3em;
         /* goeie code om fotos groter te maken? want was anders  */
     }
 }
 
+main section:nth-of-type(2){
+    min-height: 68svh;
+}
+
 main section:nth-of-type(2)p:nth-of-type(2) {
-    /* hoe maak ik video groter zonder dat hij ingezoomt wordt? */
     display: block !important;
     /* werkt niet? */
 }
+
+main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+    width: 19.8em;
+}
+
+main section:nth-of-type(3) p {
+    font-size: 1.4em;
+}
+
+main section:nth-of-type(9) h2 {
+    margin-left: 1em;
+    margin-bottom: 0.9em;
+}
+
+main section:nth-of-type(9) li a{
+    width: 20em;
+}
+
+main section:nth-of-type(10) h2 {
+    max-width: 40ch;
+}
+
+/* footer met 3 checks , de laatste moet rechst staan*/
 
 /************************************************/
 /* 536 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 536px) {
+
+    /* waar ben je naar opzoek is gecentreerd
+    header form {
+        margin-top: 1em;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        justify-self: end;
+        width: 1em;
+        position: relative;
+        width: 100%;
+    } */
+
+    .ladies-category a img {
+        width: 13em;
+        /* goeie code om fotos groter te maken? want was anders  */
+    }
+
+    main section:nth-of-type(2){
+        min-height: 60svh;
+    }
+
+    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+        width: 22em;
+    }
 }
+
+main section:nth-of-type(9) li a{
+    width: 22em;
+}
+
+main section:nth-of-type(10) h2 {
+    max-width: 30ch;
+}
+
+/* footer met 3 checks , de laatste moet rechst staan*/
+/* regel hetzelf onder elkaar */
+
+
 
 /************************************************/
 /* 600 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 600px) {
+    .ladies-category a img {
+        width: 14.7em;
+        /* goeie code om fotos groter te maken? want was anders  */
+    }
+
+    main section:nth-of-type(3) ul li a img, main section:nth-of-type(6) ul li a img, main section:nth-of-type(7) ul li a img {
+        width: 24.5em;
+    }
+    
+    main section:nth-of-type(9) li a{
+        width: 24em;
+    }
+
+    main section:nth-of-type(10) h2 {
+        max-width: 40ch;
+    }
+
 }
 
 /************************************************/
