@@ -317,12 +317,19 @@ h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Vragen
--Is een hamburger menu een micro interactie?
+-Is een hamburger menu een micro interactie? ja
 -Is een dropdown menu een micro interactie?
 -Als je in JS al een on click event hebt, bv dropdown of een hamburger menu, mag je er 1 kiezen of moet je beide doen? 
 -Wat is de chat icon? ook on click?
 -Mijn fonts kloppen, maar ziet er anders uit op live preview
+-Vind t wel vermoeiend dat alle css in 1 file moet
 
+
+min widht- geen telefoon meer
+min widht- geen tablet meer
+laptop vanaf 785
+
+kies bepaalde breakpoints
 </details>
 
 
