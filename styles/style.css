@@ -1117,6 +1117,7 @@ footer > ul a {
 
     .ladies-category a p {
         font-size: 1.2em;
+        /* max-width: 15ch; */
     }
 
     main section:nth-of-type(2) {
@@ -1152,8 +1153,12 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
+    header section a:nth-of-type(1), header section a:nth-of-type(3) {
+        display: none !important;
+    }
+
     .ladies-category h2 {
-        max-width: 40ch;
+        max-width: 44ch;
     }
 
     .ladies-category ul {
@@ -1234,7 +1239,7 @@ footer > ul a {
     }
 
     main section:nth-of-type(2) {
-        min-height: 60svh;
+        min-height: 80svh;
     }
 
     main section:nth-of-type(3) ul li a img,
@@ -1259,9 +1264,14 @@ footer > ul a {
 /* 600 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 600px) {
+
+    
     .ladies-category a img {
         width: 14.7em;
-        /* goeie code om fotos groter te maken? want was anders  */
+    }
+
+    main section:nth-of-type(2) {
+        min-height: 76svh;
     }
 
     main section:nth-of-type(3) ul li a img,
@@ -1277,12 +1287,28 @@ footer > ul a {
     main section:nth-of-type(10) h2 {
         max-width: 40ch;
     }
+
+    footer > ul {
+        padding: 0 4em;
+    }
 }
+
 
 /************************************************/
 /* 616 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 616px) {
+    .ladies-category a img {
+        width: 15em;
+    }
+
+    main section:nth-of-type(2) {
+        min-height: 60svh;
+    }
+
+    main section:nth-of-type(2) p:nth-of-type(2){
+        max-width: 40ch;
+    }
 }
 
 /************************************************/
