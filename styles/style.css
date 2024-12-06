@@ -113,7 +113,6 @@ header .topNavBar a {
     text-decoration: none;
     padding: 0.1em;
     font-family: var(--font-proxyma);
-    
 }
 
 header .topNavBar a:nth-of-type(2) {
@@ -128,7 +127,6 @@ header .topNavBar a:nth-of-type(3) {
 
 header .topNavBar {
     display: block !important;
-
 }
 
 header section a:hover {
@@ -329,7 +327,8 @@ header form img {
 .indexPagina main section:nth-of-type(5),
 .indexPagina main section:nth-of-type(8),
 .indexPagina main section:nth-of-type(9),
-.indexPagina main section:nth-of-type(10) {
+.indexPagina main section:nth-of-type(10),
+.detailpagina section:nth-of-type(3) {
     background-color: #f9f7f3;
     padding: 0 0 0 0.8em;
 }
@@ -338,7 +337,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) header,
 .indexPagina main section:nth-of-type(8) header,
 .indexPagina main section:nth-of-type(9) header,
-.indexPagina main section:nth-of-type(10) header {
+.indexPagina main section:nth-of-type(10) header,
+.detailpagina section:nth-of-type(3) header {
     margin-left: 0.5em;
 }
 
@@ -346,7 +346,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul,
 .indexPagina main section:nth-of-type(8) ul,
 .indexPagina main section:nth-of-type(9) ul,
-.indexPagina main section:nth-of-type(10) ul {
+.indexPagina main section:nth-of-type(10) ul,
+.detailpagina section:nth-of-type(3) ul {
     display: flex;
     list-style: none;
     overflow-x: scroll;
@@ -358,7 +359,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li,
 .indexPagina main section:nth-of-type(8) ul li,
 .indexPagina main section:nth-of-type(9) ul li,
-.indexPagina main section:nth-of-type(10) ul li {
+.indexPagina main section:nth-of-type(10) ul li,
+.detailpagina section:nth-of-type(3) ul li {
     display: flex;
     flex-direction: column;
 }
@@ -368,7 +370,8 @@ header form img {
 .indexPagina main section:nth-of-type(8) ul li h3,
 .indexPagina main section:nth-of-type(9) ul li h3,
 .indexPagina main section:nth-of-type(10) ul li h3,
-.indexPagina main section:nth-of-type(10) ul li h4 {
+.indexPagina main section:nth-of-type(10) ul li h4,
+.detailpagina section:nth-of-type(3) ul li h3 {
     font-size: 1.2em;
     margin-bottom: 0.2em;
 }
@@ -383,7 +386,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li div,
 .indexPagina main section:nth-of-type(8) ul li div,
 .indexPagina main section:nth-of-type(9) ul li div,
-.indexPagina main section:nth-of-type(10) ul li div {
+.indexPagina main section:nth-of-type(10) ul li div,
+.detailpagina section:nth-of-type(3) ul li div {
     position: relative;
     order: 1;
 }
@@ -392,7 +396,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li div > img,
 .indexPagina main section:nth-of-type(8) ul li div > img,
 .indexPagina main section:nth-of-type(9) ul li div > img,
-.indexPagina main section:nth-of-type(10) ul li div > img {
+.indexPagina main section:nth-of-type(10) ul li div > img,
+.detailpagina section:nth-of-type(3) ul li div > img {
     width: 13.3em;
     margin-right: 0.7em;
     position: relative;
@@ -403,7 +408,8 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li button,
 .indexPagina main section:nth-of-type(8) ul li button,
 .indexPagina main section:nth-of-type(9) ul li button,
-.indexPagina main section:nth-of-type(10) ul li button {
+.indexPagina main section:nth-of-type(10) ul li button,
+.detailpagina section:nth-of-type(3) ul li button {
     position: absolute;
     border: none;
     z-index: 10;
@@ -427,7 +433,9 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li h3 a,
 .indexPagina main section:nth-of-type(8) ul li h3 a,
 .indexPagina main section:nth-of-type(9) ul li h3 a,
-.indexPagina main section:nth-of-type(10) ul li h3 a {
+.indexPagina main section:nth-of-type(10) ul li h3 a,
+.detailpagina section:nth-of-type(3) ul li h3,
+.detailpagina section:nth-of-type(3) ul li h3 a {
     text-decoration: none;
     color: var(--color--zwart);
     order: 2;
@@ -438,14 +446,16 @@ header form img {
 .indexPagina main section:nth-of-type(5) ul li > p,
 .indexPagina main section:nth-of-type(8) ul li > p,
 .indexPagina main section:nth-of-type(9) ul li > p,
-.indexPagina main section:nth-of-type(10) ul li > p {
+.indexPagina main section:nth-of-type(10) ul li > p,
+.detailpagina section:nth-of-type(3) ul li > p {
     order: 2;
 }
 
 .indexPagina main section:nth-of-type(4) ul li > p,
 .indexPagina main section:nth-of-type(5) ul li > p,
 .indexPagina main section:nth-of-type(9) ul li > p,
-.indexPagina main section:nth-of-type(10) ul li > p {
+.indexPagina main section:nth-of-type(10) ul li > p,
+.detailpagina section:nth-of-type(3) ul li > p {
     margin-top: 0.2em;
     font-family: var(--font-proxyma_bold);
     color: var(--color--zwart);
@@ -679,7 +689,9 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 .indexPagina main section:nth-of-type(4) ul li h3,
 .indexPagina main section:nth-of-type(5) ul li h3,
 .indexPagina main section:nth-of-type(4) ul li > p,
-.indexPagina main section:nth-of-type(5) ul li > p {
+.indexPagina main section:nth-of-type(5) ul li > p,
+.detailpagina section:nth-of-type(3) ul li h3,
+.detailpagina section:nth-of-type(3) ul li > p{
     order: 2;
     margin-top: 0.2em;
     font-family: var(--font-proxyma_bold);
@@ -688,7 +700,8 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 
 .indexPagina main section:nth-of-type(4) ul li > p:nth-of-type(1),
 .indexPagina main section:nth-of-type(5) ul li > p:nth-of-type(1),
-.indexPagina main section:nth-of-type(8) ul li > p:nth-of-type(1) {
+.indexPagina main section:nth-of-type(8) ul li > p:nth-of-type(1),
+.detailpagina section:nth-of-type(3) ul li > p:nth-of-type(1) {
     font-family: var(--font-proxyma);
     margin-bottom: 0;
     font-size: 0.85em;
@@ -702,13 +715,15 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 /* Bron: https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css */
 
 .indexPagina main section:nth-of-type(4) ul li:nth-of-type(2),
-.indexPagina main section:nth-of-type(5) ul li p:nth-of-type(2) {
+.indexPagina main section:nth-of-type(5) ul li p:nth-of-type(2),
+.detailpagina section:nth-of-type(3) ul li p:nth-of-type(2){
     margin-top: 0;
     font-family: var(--font-proxyma_bold);
 }
 
 .indexPagina main section:nth-of-type(4) ul li button,
-.indexPagina main section:nth-of-type(5) ul li button {
+.indexPagina main section:nth-of-type(5) ul li button,
+.detailpagina section:nth-of-type(3) ul li button {
     position: absolute;
     border: none;
     z-index: 10;
@@ -726,7 +741,12 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
     font-size: 0.85em;
 }
 
-.indexPagina main section:nth-of-type(5) ul li:nth-of-type(1) > p:nth-of-type(1) {
+.indexPagina
+    main
+    section:nth-of-type(5)
+    ul
+    li:nth-of-type(1)
+    > p:nth-of-type(1) {
     font-family: var(--font-proxyma_bold);
     color: var(--color--zwart);
 }
@@ -744,7 +764,12 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
     font-family: var(--font-proxyma_bold);
 }
 
-.indexPagina main section:nth-of-type(5) ul li:nth-of-type(2) > p:nth-of-type(1) {
+.indexPagina
+    main
+    section:nth-of-type(5)
+    ul
+    li:nth-of-type(2)
+    > p:nth-of-type(1) {
     font-family: var(--font-proxyma_bold);
     color: var(--color--zwart);
 }
@@ -825,8 +850,18 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
     padding: 1.5em 0;
 }
 
-.indexPagina main section:nth-of-type(8) ul li:nth-of-type(1) img:nth-of-type(2),
-.indexPagina main section:nth-of-type(8) ul li:nth-of-type(5) img:nth-of-type(2) {
+.indexPagina
+    main
+    section:nth-of-type(8)
+    ul
+    li:nth-of-type(1)
+    img:nth-of-type(2),
+.indexPagina
+    main
+    section:nth-of-type(8)
+    ul
+    li:nth-of-type(5)
+    img:nth-of-type(2) {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -1017,7 +1052,9 @@ footer section:nth-of-type(4) ul {
     overflow: hidden;
 }
 
-footer h4 {
+footer h4,
+.specifications h4,
+.productInformation h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1463,7 +1500,7 @@ footer > ul a {
     text-decoration: none;
     font-size: 0.9em;
     color: var(--color--zwart);
-    background-color: var(--color--wit);
+    /* background-color: var(--color--wit); */
 }
 .detailpagina a:nth-of-type(1) {
     display: block;
@@ -1519,14 +1556,12 @@ footer > ul a {
     gap: 0.2em;
 }
 
-
-.detailpagina .slideshowThumbnails img{
+.detailpagina .slideshowThumbnails img {
     width: 100%;
 }
 
 .detailpagina section:nth-of-type(1) div ul:nth-of-type(1) img {
     width: 25em;
-
 }
 
 /* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
@@ -1544,12 +1579,11 @@ footer > ul a {
     font-size: 0.8em;
     color: var(--color--donkergrijs);
     font-family: var(--font-proxyma);
-    
 }
 
 .detailpagina aside section:nth-of-type(1),
 .detailpagina aside section:nth-of-type(2),
-.detailpagina aside section:nth-of-type(3){
+.detailpagina aside section:nth-of-type(3) {
     padding-left: 1.5em;
 }
 
@@ -1569,8 +1603,6 @@ footer > ul a {
     font-family: var(--font-proxyma_bold);
 }
 
-
-
 .detailpagina aside section:nth-of-type(2) {
     border-bottom: solid 0.01em var(--color--donkerbeige);
     border-top: solid 0.01em var(--color--donkerbeige);
@@ -1584,7 +1616,6 @@ footer > ul a {
 .detailpagina aside img:nth-of-type(1),
 .detailpagina aside img:nth-of-type(2) {
     width: 1em;
-    
 }
 
 .detailpagina aside section:nth-of-type(3) button {
@@ -1608,41 +1639,80 @@ footer > ul a {
     align-items: center;
 }
 
-.detailpagina aside section:nth-of-type(4){
+.detailpagina aside section:nth-of-type(4) {
     display: flex;
     align-items: flex-start;
     gap: 0.5em;
     padding: 1.2em;
+    background-color: var(--color--lichtbeige);
+    margin-top: 1em;
 }
-    
-.detailpagina aside section:nth-of-type(4) p{
+
+.detailpagina aside section:nth-of-type(4) p {
     font-family: var(--font-proxyma);
     font-size: 0.75em;
     margin: 0;
 }
 
-.detailpagina aside section:nth-of-type(4) a{
+.detailpagina aside section:nth-of-type(4) a {
     margin-left: 0 !important;
     text-decoration: underline;
     font-family: var(--font-proxyma_bold);
     display: inline;
 }
 
-.detailpagina aside section:nth-of-type(4) img{
+.detailpagina aside section:nth-of-type(4) img {
     width: 1.3em;
 }
 
-.detailpagina aside section:nth-of-type(5) h2{
+.detailpagina aside section:nth-of-type(5) h2 {
     display: none;
 }
 
-.detailpagina aside section:nth-of-type(5){
-padding: 1.2em ;
+.detailpagina aside section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.detailpagina aside section:nth-of-type(5) img{
-    position: static;
+.detailpagina aside section:nth-of-type(5) {
+    padding: 1.2em;
+}
 
+.detailpagina aside section:nth-of-type(5) img {
+    position: static;
+    width: 1.2em;
+}
+
+.detailpagina aside section:nth-of-type(5) div img {
+    opacity: 30%;
+}
+
+.detailpagina aside section:nth-of-type(5) div div img {
+    opacity: 100%;
+}
+
+.detailpagina aside section:nth-of-type(5) div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailpagina aside section:nth-of-type(5) div a {
+    font-family: var(--font-proxyma);
+    font-size: 0.8em;
+}
+
+.detailpagina aside .specifications ul,
+.detailpagina aside .productInformation ul {
+    height: 0;
+    overflow: hidden;
+}
+
+.detailpagina aside .specifications h4,
+.detailpagina aside .productInformation h4 {
+    margin: 1em;
+    border-bottom: 0.1em solid var(--color--donkerbeige) ;
+    padding-bottom: 1em;
 }
 
 
@@ -1651,6 +1721,40 @@ padding: 1.2em ;
             BEKIJK MEER
  /------------------------------------------------/
 /------------------------------------------------/ */
+
+.seeMore h2 {
+    font-size: 1.1em;
+    font-family: var(--font-saint_laurent);
+    margin-left: 1.2em;
+    
+}
+
+.seeMore a:nth-of-type(2) {
+    display: block;
+}
+
+.seeMore ul{
+    list-style: none ;
+    display: flex;
+    padding: 0;
+}
+
+.seeMore a{
+    padding: 0.9em 1.6em;
+    background-color: var(--color--wit);
+    border-radius: 4em;
+    border: var(--color--donkergrijs) solid 0.1em;
+}
+
+.seeMore a:hover{
+    background-color: var(--color--donkerbeige);
+    border-color: var(--color--donkerbeige);
+}
+
+.detailpagina section:nth-of-type(3){
+    background-color: var(--color--wit);
+}
+
 
 /* /------------------------------------------------/
 /------------------------------------------------/

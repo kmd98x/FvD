@@ -29,7 +29,7 @@
 
 
 
-const listHeadings = document.querySelectorAll('footer section div h4');
+const listHeadings = document.querySelectorAll('footer section div h4, .specifications h4, .productInformation h4');
 
 listHeadings.forEach((heading) => {
 	const list = heading.nextElementSibling;
