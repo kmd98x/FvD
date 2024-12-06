@@ -271,10 +271,8 @@ h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+ -Kwam erachter dat er dark mode erbij moest.
+ -Verder geen vragen 
 
 </details>
 
@@ -318,10 +316,12 @@ h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Vragen
+-Is een hamburger menu een micro interactie?
+-Is een dropdown menu een micro interactie?
+-Als je in JS al een on click event hebt, bv dropdown of een hamburger menu, mag je er 1 kiezen of moet je beide doen? 
+-Wat is de chat icon? ook on click?
+-Mijn fonts kloppen, maar ziet er anders uit op live preview
 
 </details>
 
@@ -363,8 +363,10 @@ h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://www.w3schools.com/howto/howto_css_placeholder.asp)
+  2. [bron 2](https://www.a11yproject.com/posts/how-to-hide-content/)
+  3. [bron 3](https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css)
+  4. [bron 4] (https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator)
+  5. [bron 5] (https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
 
 </details>
