@@ -1153,7 +1153,8 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
-    header section a:nth-of-type(1), header section a:nth-of-type(3) {
+    header section a:nth-of-type(1),
+    header section a:nth-of-type(3) {
         display: none !important;
     }
 
@@ -1264,8 +1265,6 @@ footer > ul a {
 /* 600 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 600px) {
-
-    
     .ladies-category a img {
         width: 14.7em;
     }
@@ -1293,7 +1292,6 @@ footer > ul a {
     }
 }
 
-
 /************************************************/
 /* 616 PX INDEX MEDIA QUERY */
 /************************************************/
@@ -1306,8 +1304,12 @@ footer > ul a {
         min-height: 60svh;
     }
 
-    main section:nth-of-type(2) p:nth-of-type(2){
+    main section:nth-of-type(2) p:nth-of-type(2) {
         max-width: 40ch;
+    }
+
+    main section:nth-of-type(9) li a {
+        width: 11em;
     }
 }
 
@@ -1315,26 +1317,115 @@ footer > ul a {
 /* 768 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 768px) {
+    .ladies-category a img {
+        width: 8.5em;
+    }
+
+    main section:nth-of-type(2) {
+        min-height: 40svh;
+    }
+
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
+        width: 15em;
+    }
+
+    main section:nth-of-type(11) {
+        display: block;
+        background-color: var(--color--wit);
+    }
+
+    main section:nth-of-type(11) button {
+        background-color: var(--color--zwart);
+        color: var(--color--wit);
+        padding: 1em 5em;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    main section:nth-of-type(11) ul li {
+        list-style: none;
+    }
+
+    main section:nth-of-type(11) ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer section ul {
+        max-width: 33%;
+    }
 }
 
 /************************************************/
 /* 992 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 992px) {
+    .ladies-category a img {
+        width: 10em;
+    }
+
+    main section:nth-of-type(3) ul li a img,
+    main section:nth-of-type(6) ul li a img,
+    main section:nth-of-type(7) ul li a img {
+        width: 19em;
+    }
+
     main section:nth-of-type(4),
-    main section:nth-of-type(5) {
+    main section:nth-of-type(5),
+    main section:nth-of-type(10) {
         display: flex;
         align-items: center;
     }
 
     main section:nth-of-type(4) header,
-    main section:nth-of-type(5) header{
+    main section:nth-of-type(5) header {
         width: 30em;
         font-size: 1.2em;
         margin-right: 4em;
     }
+
+    main section:nth-of-type(9) li a {
+        width: 13em;
+    }
 }
 
+/************************************************/
+/* 1040 PX INDEX MEDIA QUERY */
+/************************************************/
+
+@media (min-width: 992px) {
+    .ladies-category a img {
+        width: 11em;
+    }
+
+    main section:nth-of-type(3),
+    main section:nth-of-type(6),
+    main section:nth-of-type(7) {
+        padding: 2em;
+    }
+
+    main section:nth-of-type(3) h2,
+    main section:nth-of-type(6) h2,
+    main section:nth-of-type(7) h2,
+    main section:nth-of-type(9) h2 {
+        font-size: 2.4em;
+    }
+
+    main section:nth-of-type(8) h2 {
+        font-size: 2.4em;
+    }
+
+    main section:nth-of-type(8) ul li:nth-of-type(1) img,
+    main section:nth-of-type(8) ul li:nth-of-type(5) img {
+        width: 18em;
+    }
+
+    main section:nth-of-type(4) ul li div > img, main section:nth-of-type(5) ul li div > img, main section:nth-of-type(8) ul li div > img, main section:nth-of-type(9) ul li div > img, main section:nth-of-type(10) ul li div > img {
+        width: 18em;
+    }
+}
 /****************************************************************/
 /****************************************************************/
 /****************************************************************/
