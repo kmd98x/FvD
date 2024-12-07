@@ -459,7 +459,7 @@ margin-top: 0.2em;
 .indexPagina main section:nth-of-type(9),
 .indexPagina main section:nth-of-type(10),
 .detailpagina section:nth-of-type(3) {
-    background-color: var(--color--wit);
+    /* background-color: var(--color--wit); */
     padding: 0 0 0 0.8em;
 }
 
@@ -776,6 +776,12 @@ margin-top: 0.2em;
 .indexPagina main section:nth-of-type(6) {
     background: var(--color--wit);
     padding: 1.5em 0;
+}
+
+.indexPagina main section:nth-of-type(4) p,
+.indexPagina main section:nth-of-type(6) p
+{
+    color:var(--color--donkergrijs);
 }
 
 .indexPagina main section:nth-of-type(3) header,
