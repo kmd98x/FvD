@@ -59,7 +59,7 @@ button.forEach((button) => {
 heart.innerText = '0';
 
 
-function hamburgermenu() {
+function hamburgerMenu() {
 
 	const navigationMenu = document.querySelector(".navigationMenu");
 	const openMenu = document.querySelector(".navBar button");
@@ -82,4 +82,27 @@ function hamburgermenu() {
 	})
 }
 
-hamburgermenu()
+function themeSwitcher() {
+	const switcherButton = document.querySelector(".theme-switcher");
+	const currentTheme = localStorage.getItem("theme");
+
+	if (currentTheme){
+		document.documentElement.setAttribute("data-theme", currentTheme)
+	}
+
+	switcherButton.addEventListener("click", () => {
+		const currentTheme = document.documentElement.setAttribute("data-theme");
+
+		const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+		document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+	})
+// console.log("hi")
+}
+
+
+hamburgerMenu()
+themeSwitcher()
+
+

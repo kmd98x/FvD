@@ -36,18 +36,10 @@ p a {
 /*********************/
 :root {
     /* kleuren */
-    --color-text: #111;
     --color-background: #eee;
-    --color-lightbeige: rgb(250, 247, 243);
     --color-header: #f9f7f3;
     --color-header-text-hover: #aba6a4;
-    --color-hamburger: #808080;
-    --color-border_bottom_searchbar: #dcd8d4;
     --color-status_background: #f6efe7;
-    --color-image_background: #f1f0ec;
-    --color-button: #f7a800;
-    --color-best_seller_text: #3e3a37;
-    --color-border_onder_prijs: #e9e5e3;
 
     --color--lichtbeige: #f8f7f3;
     --color--donkerbeige: #ece5da;
@@ -69,6 +61,21 @@ p a {
     --spacing-16: 1em;
     --spacing-20: 1.25em;
     --spacing-24: 1.5em;
+}
+
+[data-theme="dark"] {
+    --color-background: #eee;
+    --color-header: #000000;
+    --color-header-text-hover: #aba6a4;
+    --color-status_background: #f6efe7;
+
+    --color--lichtbeige: #f8f7f3;
+    --color--donkerbeige: #ece5da;
+    --color--wit: #ffffff;
+    --color--zwart: #000000;
+    --color--donkergrijs: #635f5c;
+    --color--paars: #5a44b7;
+    --color-oranje: #f7a800;
 }
 
 /****************/
@@ -99,9 +106,9 @@ p a {
     bottom: 1em;
     right: 1em;
     display: flex;
-    gap: 3em;
+    gap: 1.7em;
     background-color: var(--color--paars);
-    padding: 0.7em 1.5em;
+    padding: 0.7em 1em;
     border-radius: 3em;
     z-index: 40;
     cursor: pointer;
@@ -635,7 +642,7 @@ margin-top: 0.2em;
 .ladies-category a {
     position: relative;
     display: block;
-    color: var(--color-background);
+    color: var(--color--wit);
     overflow: hidden;
 }
 
@@ -716,7 +723,7 @@ margin-top: 0.2em;
 
 .indexPagina main section:nth-of-type(2) button {
     padding: 0.9em 2em;
-    background-color: var(--color-background);
+    background-color: var(--color--wit);
     border: none;
     font-size: 0.9em;
     order: 3;
