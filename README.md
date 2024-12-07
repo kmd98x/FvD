@@ -376,5 +376,6 @@ Bij mijn 2e pagina zal ik erop letten, maar ik ga van mijn 1e pagina niet meer a
   3. [bron 3](https://stackoverflow.com/questions/37132752/adding-when-text-is-too-long-in-a-div-with-only-css)
   4. [bron 4] (https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator)
   5. [bron 5] (https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
+  6. [bron 6] (chatGPT: prompt: Implement darkmode on a website using HTML and CSS)
 
 </details>

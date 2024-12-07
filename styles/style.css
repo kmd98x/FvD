@@ -94,8 +94,33 @@ p a {
                     HEADER 
  /------------------------------------------------/
 /------------------------------------------------/ */
+.theme-switcher{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    display: flex;
+    gap: 3em;
+    background-color: var(--color--paars);
+    padding: 0.7em 1.5em;
+    border-radius: 3em;
+    z-index: 40;
+    cursor: pointer;
+}
 
+.theme-switcher span{
+    position: absolute;
+    left: 50%;
+    top:0.2em;
+    height: calc(100% - 0.4em);
+    width: calc(50% - 0.2em);
+    background: var(--color--lichtbeige);
+    border-radius: 3em;
+}
 
+.theme-switcher img{
+    position: relative;
+
+}
 
 header section h2 {
     display: none;
