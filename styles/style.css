@@ -36,11 +36,14 @@ p a {
 /*********************/
 :root {
     /* kleuren */
+
     --color-background: #eee;
     --color-body: #f9f7f3;
     --color-header: #f9f7f3;
     --color-header-text-hover: #aba6a4;
     --color-status_background: #f6efe7;
+    --color--form: #ece5da;
+    --color--wittetekst: #ffffff;
 
     --color--lichtbeige: #f8f7f3;
     --color--donkerbeige: #ece5da;
@@ -65,19 +68,28 @@ p a {
 }
 
 [data-theme="dark"] {
-    --color-body: #000000;
-    --color-background: #1e1e1e;
-    --color-header: #ffffff;
-    --color-header-text-hover: #4cbc7;
-    --color-status_background: #3a2f28;
+    --color-background: #000000;
+    --color--wit: #000000;
+    --color--zwart: #c2bbbb;
+    --color--wittetekst: #c2bbbb;
 
-    --color--lichtbeige: #2a2824;
-    --color--donkerbeige: #443e37;
-    --color--wit: #121212;
-    --color--zwart: #e0e0e0;
-    --color--donkergrijs: #b3afac;
+
+    --color--form: #185996;
+
+    --color-body: #000000;
+    --color-header: #c12a2a;
+    --color-header-text-hover: #8f8e8d;
+    --color-status_background: #2a2a2a;
+    --color--donkergrijs: #ada1a1;
+
+    --color--lichtbeige: #1d1b18;
+    --color--donkerbeige: #0d0c0c;
+    
+    
+    --color--donkergrijs: #ada1a1;
     --color--paars: #5a44b7;
     --color-oranje: #f7a800;
+    
 }
 
 /****************/
@@ -145,7 +157,7 @@ header .topNavBar {
 }
 
 header .topNavBar a {
-    color: var(--color-text);
+    color: var(--color--zwart);
     text-decoration: none;
     padding: 0.1em;
     font-family: var(--font-proxyma);
@@ -233,7 +245,7 @@ header form {
 header form input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--color--donkerbeige);
+    border-bottom: 1px solid var(--color--form);
     padding: var(--spacing-12);
 }
 
@@ -377,6 +389,10 @@ margin-top: 0.2em;
     width: 100%;
 }
 
+.indexPagina h2{
+    color: var(--color--zwart);
+}
+
 /* /------------------------------------------------/
 /------------------------------------------------/
             LAYOUT SECTION 3,6 & 7 
@@ -443,7 +459,7 @@ margin-top: 0.2em;
 .indexPagina main section:nth-of-type(9),
 .indexPagina main section:nth-of-type(10),
 .detailpagina section:nth-of-type(3) {
-    background-color: #f9f7f3;
+    background-color: var(--color--wit);
     padding: 0 0 0 0.8em;
 }
 
@@ -598,11 +614,11 @@ margin-top: 0.2em;
     bottom: 0;
     left: 0;
     font-size: 0.8em;
-    background-color: #f9f7f3;
+    background-color: var(--color--wit);
     padding: 0.4em 0.6em;
     margin-left: 0;
     margin-bottom: 0;
-    color: #635f5c;
+    color: var(--color--donkergrijs);
     width: fit-content !important;
 }
 
@@ -673,6 +689,7 @@ margin-top: 0.2em;
     text-align: center;
     padding: 0 1em;
     font-family: var(--font-saint_laurent);
+    color: var(--color--wittetekst);
 }
 
 /* /------------------------------------------------/
@@ -707,7 +724,7 @@ margin-top: 0.2em;
 .indexPagina main section:nth-of-type(2) p:nth-of-type(1),
 .indexPagina main section:nth-of-type(2) h2 {
     margin: 0;
-    color: var(--color--wit);
+    color: var(--color--wittetekst);
     font-family: var(--font-saint_laurent);
     font-weight: 300;
 }
@@ -748,7 +765,7 @@ margin-top: 0.2em;
     border-bottom: 0.1em solid black;
     padding-bottom: 0.1em;
     font-size: 0.85em;
-    color: black;
+    color: var(--color--zwart);
     font-family: var(--font-proxyma_bold);
     display: block;
     width: fit-content;
@@ -776,7 +793,7 @@ h2 {
 .indexPagina main section:nth-of-type(3) p {
     position: absolute;
     bottom: 0;
-    color:var(--color--wit);
+    color:var(--color--wittetekst);
     font-size: 1.2em;
     font-family: var(--font-saint_laurent);
     background: rgba(0, 0, 0, 0.3);
