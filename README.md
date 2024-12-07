@@ -329,7 +329,8 @@ min widht- geen telefoon meer
 min widht- geen tablet meer
 laptop vanaf 785
 
-kies bepaalde breakpoints
+Kies bepaalde breakpoints. Ik heb nu dus te veel media queries.
+Bij mijn 2e pagina zal ik erop letten, maar ik ga van mijn 1e pagina niet meer aanpassen, omdat dat veels te veel werk is voor mij gezien mijn mentale situatie. Mijn slb'er en studenten decaan zijn hiervan op de hoogte.
 </details>
 
 

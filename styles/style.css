@@ -95,6 +95,8 @@ p a {
  /------------------------------------------------/
 /------------------------------------------------/ */
 
+
+
 header section h2 {
     display: none;
 }
@@ -139,7 +141,7 @@ header nav {
     background-color: white;
 }
 
-header nav section:nth-child(1) {
+/* header nav section:nth-child(1) {
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +151,7 @@ header nav section:nth-child(1) {
     z-index: 20;
     transition: 1s;
     overflow: hidden;
-}
+} */
 
 header nav section:nth-child(2) {
     display: grid;
@@ -210,6 +212,84 @@ header form img {
     position: absolute;
     right: 0;
 }
+
+.navigationMenu{
+    position: fixed;
+    height: 100%;
+    z-index: 30;
+    top: 0;
+    left: -100%;
+    display: flex;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s;
+    
+}
+
+.navigationMenu.is-open{
+    background:  rgba(0, 0, 0, 0.5);
+    left: 0;
+    
+}
+
+.navigationMenu div{
+    max-width: 480px;
+    width: 100%;
+}
+
+.navigationMenu h2{
+    display: none;
+}
+
+.navigationMenu ul{
+    background-color: var(--color--lichtbeige);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-right: 2em;
+    
+}
+
+.navigationMenu li{
+list-style: none;
+margin-top: 0.2em;
+}
+
+.laatste2{
+    margin-top: 1.5em !important;
+    border-top: 0.1em solid var(--color--donkerbeige);
+    padding-top: 2em;
+    display: inline-block;
+}
+
+.navigationMenu li:nth-child(1){
+    font-size: 1.4em;
+    font-family: var(--font-saint_laurent);
+}
+
+.navigationMenu a{
+    text-decoration: none;
+    color: var(--color--zwart);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navigationMenu section{
+    display: flex;
+    gap: 2em;
+   padding: 2em;
+   background-color: var(--color--lichtbeige);
+   justify-content: space-between;
+}
+
+
 
 .user_actions {
     gap: 1.5em;
@@ -1151,6 +1231,10 @@ footer > ul a {
 /* 455 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 455px) {
+    header nav section:nth-child(2) > a img {
+        display: block;
+    }
+
     .ladies-category h2 {
         max-width: 30ch;
     }
@@ -1197,7 +1281,7 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
-    header section a:nth-of-type(1),
+    
     header section a:nth-of-type(3) {
         display: none !important;
     }

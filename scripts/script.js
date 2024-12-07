@@ -57,3 +57,29 @@ button.forEach((button) => {
 	});
 })
 heart.innerText = '0';
+
+
+function hamburgermenu() {
+
+	const navigationMenu = document.querySelector(".navigationMenu");
+	const openMenu = document.querySelector(".navBar button");
+	const closeMenu = document.querySelector(".navigationMenu div section img:nth-of-type(1)");
+	// console.log(navigationMenu, openMenu, closeMenu)
+
+	let navIsOpen = false;
+
+	[openMenu, closeMenu].forEach(element => {
+		element.addEventListener("click",() => {
+			if (navIsOpen == false) {
+				navIsOpen = true;
+				navigationMenu.classList.add("is-open")
+			}
+			else {
+				navIsOpen = false;
+				navigationMenu.classList.remove("is-open")
+			}
+		})
+	})
+}
+
+hamburgermenu()
