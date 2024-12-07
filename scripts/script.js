@@ -82,27 +82,71 @@ function hamburgerMenu() {
 	})
 }
 
+// function themeSwitcher() {
+// 	const switcherButton = document.querySelector(".theme-switcher");
+// 	const currentTheme = localStorage.getItem("theme");
+
+// 	if (currentTheme) {
+// 		document.documentElement.setAttribute("data-theme", currentTheme);
+// 	}
+
+// 	switcherButton.addEventListener("click", () => {
+// 		const currentTheme = document.documentElement.getAttribute("data-theme");
+
+// 		const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+// 		document.documentElement.setAttribute("data-theme", newTheme);
+
+// 		localStorage.setItem("theme", newTheme);
+// 	});
+// }
+
 function themeSwitcher() {
 	const switcherButton = document.querySelector(".theme-switcher");
 	const currentTheme = localStorage.getItem("theme");
-
-	if (currentTheme){
-		document.documentElement.setAttribute("data-theme", currentTheme)
+  
+	// Als er al een thema in localStorage is, stel dit in
+	if (currentTheme) {
+	  document.documentElement.setAttribute("data-theme", currentTheme);
+	  changeIconColors(currentTheme); // Pas de kleuren van de iconen aan op basis van het opgeslagen thema
 	}
-
+  
 	switcherButton.addEventListener("click", () => {
-		const currentTheme = document.documentElement.setAttribute("data-theme");
+	  const currentTheme = document.documentElement.getAttribute("data-theme");
+	  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  
+	  // Verander het thema
+	  document.documentElement.setAttribute("data-theme", newTheme);
+  
+	  // Sla het nieuwe thema op in localStorage
+	  localStorage.setItem("theme", newTheme);
+  
+	  // Pas de kleur van de iconen aan op basis van het nieuwe thema
+	  changeIconColors(newTheme);
+	});
+  }
+  
+  // Functie om de kleuren van de iconen te veranderen
+  function changeIconColors(theme) {
+	// Selecteer alle SVG iconen
+	const svgIcons = document.querySelectorAll('.icon');
+  
+	// Als het thema dark is, verander de iconen naar wit, anders naar zwart
+	svgIcons.forEach(icon => {
+	  if (theme === "dark") {
+		icon.style.color = 'white';  // Zet de iconen naar wit in dark mode
+	  } else {
+		icon.style.color = 'black';  // Zet de iconen naar zwart in light mode
+	  }
+	});
+  }
+  
 
-		const newTheme = currentTheme === "dark" ? "light" : "dark";
 
-		document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-	})
-// console.log("hi")
-}
+
 
 
 hamburgerMenu()
 themeSwitcher()
-
+changeIconColors()
 
