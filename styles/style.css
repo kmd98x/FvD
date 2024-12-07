@@ -1128,6 +1128,7 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 
 .indexPagina main section:nth-of-type(11) {
     display: none;
+    color: var(--color--wittetekst);
 }
 
 /* /------------------------------------------------/
@@ -1565,8 +1566,9 @@ footer > ul a {
     }
 
     .indexPagina main section:nth-of-type(4) header,
-    .indexPagina main section:nth-of-type(5) header {
-        width: 30em;
+    .indexPagina main section:nth-of-type(5) header,
+    .indexPagina main section:nth-of-type(10) header {
+        width: 50em;
         font-size: 1.2em;
         margin-right: 4em;
     }
@@ -1580,7 +1582,7 @@ footer > ul a {
 /* 1040 PX INDEX MEDIA QUERY */
 /************************************************/
 
-@media (min-width: 992px) {
+@media (min-width: 1040px) {
     .ladies-category a img {
         width: 11em;
     }
