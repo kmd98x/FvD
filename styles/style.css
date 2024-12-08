@@ -1178,7 +1178,7 @@ footer section:nth-of-type(4) ul {
     overflow: hidden;
 }
 
-footer h4{
+footer h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1474,6 +1474,17 @@ footer > ul a {
 /* 768 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 768px) {
+    header .topNavBar a:nth-of-type(1),
+    header .topNavBar a:nth-of-type(3) {
+        display: inline-block !important;
+    }
+
+    header .topNavBar {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .ladies-category a img {
         width: 8.5em;
     }
@@ -1489,10 +1500,17 @@ footer > ul a {
     }
 
     .indexPagina main section:nth-of-type(11) {
-        display: block;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around;
         background-color: var(--color--wit);
         padding: 0.1em;
-        
+    }
+
+    .indexPagina main section:nth-of-type(11) header {
+        width: 100%;
+        margin-bottom: 2em;
     }
 
     .indexPagina main section:nth-of-type(11) h2 {
@@ -1500,6 +1518,7 @@ footer > ul a {
         justify-content: center;
         align-items: center;
         margin-bottom: 1em;
+        width: 100%;
     }
 
     .indexPagina main section:nth-of-type(11) button {
@@ -1507,12 +1526,10 @@ footer > ul a {
         color: var(--color--wit);
         padding: 1em 5em;
         margin-bottom: 2em;
-        margin-top: .1em;
+        margin-top: 0.1em;
         margin: auto;
         display: block;
     }
-
-    
 
     .indexPagina main section:nth-of-type(11) ul li {
         list-style: none;
@@ -1521,15 +1538,15 @@ footer > ul a {
     }
 
     .indexPagina main section:nth-of-type(11) ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         display: inline-block;
-        justify-content: center;
         padding: 0;
         margin: 0 2em;
         margin-bottom: 3em;
-    
-        
+    }
+
+    footer section:nth-of-type(1) ul {
+        grid-template-columns: repeat(3,1fr);
+        gap: 1em;
     }
 }
 
@@ -1847,7 +1864,6 @@ footer > ul a {
     padding-bottom: 1em;
 }
 
-
 /* /------------------------------------------------/
 /------------------------------------------------/
             BEKIJK MEER
@@ -1906,3 +1922,71 @@ main section:nth-of-type(4) button.liked img:nth-of-type(1),
 main section:nth-of-type(5) button.liked img:nth-of-type(1) {
     display: none;
 }
+
+
+
+/************************************************/
+/* 768 PX INDEX MEDIA QUERY */
+/************************************************/
+@media (min-width: 768px){
+    .detailpagina > section:nth-of-type(1) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: var(--color--wit);
+        
+    }
+
+    .detailpagina section:nth-of-type(1) >div {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap:2em;
+        
+    }
+
+
+    .detailpagina aside section:nth-of-type(1) h2 {
+        display: block !important;
+        font-size: 1.8em;
+        margin-top: -0.05em;
+    }
+
+    .detailpagina aside section:nth-of-type(3) button {
+        white-space: nowrap;
+    }
+
+    .detailpagina .slideshowImages{
+        grid-column-start: 2;
+
+    }
+
+    .detailpagina .slideshowThumbnails {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .seeMore{
+        background-color: var(--color--wit);
+        padding: 3em;
+        justify-items: center;
+    }
+
+    .detailpagina section:nth-of-type(1) div ul:nth-of-type(1) img {
+        width: 15em;
+    }
+
+    
+}
+
+
+
+
+
+/************************************************/
+/* 1040 PX INDEX MEDIA QUERY */
+/************************************************/

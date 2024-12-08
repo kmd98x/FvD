@@ -85,23 +85,34 @@ function hamburgerMenu() {
 
 
 function themeSwitcher() {
-	const switcherButton = document.querySelector(".theme-switcher");
-	const currentTheme = localStorage.getItem("theme");
-
-	if (currentTheme) {
-		document.documentElement.setAttribute("data-theme", currentTheme);
-	}
-
-	switcherButton.addEventListener("click", () => {
-		const currentTheme = document.documentElement.getAttribute("data-theme");
-
-		const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-		document.documentElement.setAttribute("data-theme", newTheme);
-
-		localStorage.setItem("theme", newTheme);
-	});
+    const switcherButton = document.querySelector(".theme-switcher");
+    const currentTheme = localStorage.getItem("theme");
+    const icons = document.querySelectorAll(".theme-icon");  
+ 
+    function updateIcons(theme) {
+        const folder = theme === "dark" ? "images/darkmode" : "images/icons";
+        icons.forEach(icon => {
+            const fileName = icon.src.substring(icon.src.lastIndexOf("/") + 1); 
+            icon.src = `/${folder}/${fileName}`; 
+        });
+    }
+ 
+    if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        updateIcons(currentTheme); 
+    }
+ 
+    switcherButton.addEventListener("click", () => {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+ 
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+ 
+        updateIcons(newTheme); 
+    });
 }
+
 
 
   

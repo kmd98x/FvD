@@ -419,6 +419,7 @@ Bij mijn 2e pagina zal ik erop letten, maar ik ga van mijn 1e pagina niet meer a
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Door tijd te kort heb ik niet alle javascripts kunnen maken, bv datum aan de bovenkant
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -442,5 +443,9 @@ Bij mijn 2e pagina zal ik erop letten, maar ik ga van mijn 1e pagina niet meer a
   4. [bron 4] (https://developer.mozilla.org/en-US/docs/Web/CSS/Next-sibling_combinator)
   5. [bron 5] (https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
   6. [bron 6] (chatGPT: prompt: Implement darkmode on a website using HTML and CSS)
+  7. [bron 7] (chatGPT: prompt: How to change path of image using JS)
+  8. [bron 8] (chatGPT: prompt: HSo I have a folder with dark-mode, want a folder with light mode icons. I want to change the folder to get the darkmode images when the theme is darkmode)
+  9. [bron 9] (chatGPT: prompt: HWhat if the path is /src/icons/{filename} and the darkmode images are in src/darkmode/icons/{filename})
+  
 
 </details>
