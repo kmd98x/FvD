@@ -318,7 +318,7 @@ Interactiviteit: knoppen en links zijn gemakkelijk te bedienen met touch, en er 
 
 -Headings
 
-wordtconsistent gebruikt
+wordt consistent gebruikt
 
 
 -Lists
@@ -419,9 +419,17 @@ Bij mijn 2e pagina zal ik erop letten, maar ik ga van mijn 1e pagina niet meer a
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-  Door tijd te kort heb ik niet alle javascripts kunnen maken, bv datum aan de bovenkant
+  Door tijd te kort heb ik niet alle javascripts kunnen maken, bv datum aan de bovenkant.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De slide die van rechts komt als je op een product klikt, maar dat kun je vergelijken met hamburger menu.
+
+  De fixed nagigatie bar, vanwege tijdnood.
+
+  De footer die bij een desktop formaat al open staat ipv dat je het moet uitklappen nog.
+
+
+
+  <img src="readme-images/fotorehts.png.jpg" width="375px" alt="bummer">
 </details>
 
 
