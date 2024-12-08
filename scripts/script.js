@@ -93,7 +93,7 @@ function themeSwitcher() {
         const folder = theme === "dark" ? "images/darkmode" : "images/icons";
         icons.forEach(icon => {
             const fileName = icon.src.substring(icon.src.lastIndexOf("/") + 1); 
-            icon.src = `/${folder}/${fileName}`; 
+            icon.src = `${folder}/${fileName}`; 
         });
     }
  
