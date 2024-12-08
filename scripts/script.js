@@ -82,6 +82,8 @@ function hamburgerMenu() {
 	})
 }
 
+
+
 function themeSwitcher() {
 	const switcherButton = document.querySelector(".theme-switcher");
 	const currentTheme = localStorage.getItem("theme");
@@ -103,7 +105,9 @@ function themeSwitcher() {
 
 
   
-  
+
+
+
 
 
 

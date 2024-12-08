@@ -73,7 +73,6 @@ p a {
     --color--zwart: #c2bbbb;
     --color--wittetekst: #c2bbbb;
 
-
     --color--form: #185996;
 
     --color-body: #000000;
@@ -84,12 +83,10 @@ p a {
 
     --color--lichtbeige: #1d1b18;
     --color--donkerbeige: #0d0c0c;
-    
-    
+
     --color--donkergrijs: #ada1a1;
     --color--paars: #5a44b7;
     --color-oranje: #f7a800;
-    
 }
 
 /****************/
@@ -115,7 +112,7 @@ p a {
                     HEADER 
  /------------------------------------------------/
 /------------------------------------------------/ */
-.theme-switcher{
+.theme-switcher {
     position: fixed;
     bottom: 1em;
     right: 1em;
@@ -128,19 +125,18 @@ p a {
     cursor: pointer;
 }
 
-.theme-switcher span{
+.theme-switcher span {
     position: absolute;
     left: 50%;
-    top:0.2em;
+    top: 0.2em;
     height: calc(100% - 0.4em);
     width: calc(50% - 0.2em);
     background: var(--color--lichtbeige);
     border-radius: 3em;
 }
 
-.theme-switcher img{
+.theme-switcher img {
     position: relative;
-
 }
 
 header section h2 {
@@ -259,7 +255,7 @@ header form img {
     right: 0;
 }
 
-.navigationMenu{
+.navigationMenu {
     position: fixed;
     height: 100%;
     z-index: 30;
@@ -272,25 +268,23 @@ header form img {
     flex-direction: column;
     align-items: flex-start;
     transition: 0.3s;
-    
 }
 
-.navigationMenu.is-open{
-    background:  rgba(0, 0, 0, 0.5);
+.navigationMenu.is-open {
+    background: rgba(0, 0, 0, 0.5);
     left: 0;
-    
 }
 
-.navigationMenu div{
+.navigationMenu div {
     max-width: 480px;
     width: 100%;
 }
 
-.navigationMenu h2{
+.navigationMenu h2 {
     display: none;
 }
 
-.navigationMenu ul{
+.navigationMenu ul {
     background-color: var(--color--lichtbeige);
     height: 100vh;
     margin: 0;
@@ -298,44 +292,40 @@ header form img {
     flex-direction: column;
     gap: 1.5em;
     padding-right: 2em;
-    
 }
 
-.navigationMenu li{
-list-style: none;
-margin-top: 0.2em;
+.navigationMenu li {
+    list-style: none;
+    margin-top: 0.2em;
 }
 
-.laatste2{
+.laatste2 {
     margin-top: 1.5em !important;
     border-top: 0.1em solid var(--color--donkerbeige);
     padding-top: 2em;
     display: inline-block;
 }
 
-.navigationMenu li:nth-child(1){
+.navigationMenu li:nth-child(1) {
     font-size: 1.4em;
     font-family: var(--font-saint_laurent);
 }
 
-.navigationMenu a{
+.navigationMenu a {
     text-decoration: none;
     color: var(--color--zwart);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
-.navigationMenu section{
+.navigationMenu section {
     display: flex;
     gap: 2em;
-   padding: 2em;
-   background-color: var(--color--lichtbeige);
-   justify-content: space-between;
+    padding: 2em;
+    background-color: var(--color--lichtbeige);
+    justify-content: space-between;
 }
-
-
 
 .user_actions {
     gap: 1.5em;
@@ -389,7 +379,7 @@ margin-top: 0.2em;
     width: 100%;
 }
 
-.indexPagina h2{
+.indexPagina h2 {
     color: var(--color--zwart);
 }
 
@@ -779,9 +769,8 @@ margin-top: 0.2em;
 }
 
 .indexPagina main section:nth-of-type(4) p,
-.indexPagina main section:nth-of-type(6) p
-{
-    color:var(--color--donkergrijs);
+.indexPagina main section:nth-of-type(6) p {
+    color: var(--color--donkergrijs);
 }
 
 .indexPagina main section:nth-of-type(3) header,
@@ -799,7 +788,7 @@ h2 {
 .indexPagina main section:nth-of-type(3) p {
     position: absolute;
     bottom: 0;
-    color:var(--color--wittetekst);
+    color: var(--color--wittetekst);
     font-size: 1.2em;
     font-family: var(--font-saint_laurent);
     background: rgba(0, 0, 0, 0.3);
@@ -828,7 +817,7 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 .indexPagina main section:nth-of-type(4) ul li > p,
 .indexPagina main section:nth-of-type(5) ul li > p,
 .detailpagina section:nth-of-type(3) ul li h3,
-.detailpagina section:nth-of-type(3) ul li > p{
+.detailpagina section:nth-of-type(3) ul li > p {
     order: 2;
     margin-top: 0.2em;
     font-family: var(--font-proxyma_bold);
@@ -853,7 +842,7 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 
 .indexPagina main section:nth-of-type(4) ul li:nth-of-type(2),
 .indexPagina main section:nth-of-type(5) ul li p:nth-of-type(2),
-.detailpagina section:nth-of-type(3) ul li p:nth-of-type(2){
+.detailpagina section:nth-of-type(3) ul li p:nth-of-type(2) {
     margin-top: 0;
     font-family: var(--font-proxyma_bold);
 }
@@ -1128,7 +1117,7 @@ SPECIAAL VOOR JOU GESELECTEERD 4 & NIEUWE COLLECTIE 5
 
 .indexPagina main section:nth-of-type(11) {
     display: none;
-    color: var(--color--wittetekst);
+    color: var(--color--zwart);
 }
 
 /* /------------------------------------------------/
@@ -1143,7 +1132,6 @@ footer h2 {
 
 footer section ul {
     list-style: none;
-    /* max-width: 33%; */
 }
 
 footer section li {
@@ -1339,7 +1327,6 @@ footer > ul a {
 /* 480 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 480px) {
-    
     header section a:nth-of-type(3) {
         display: none !important;
     }
@@ -1408,21 +1395,8 @@ footer > ul a {
 /* 536 PX INDEX MEDIA QUERY */
 /************************************************/
 @media (min-width: 536px) {
-    /* waar ben je naar opzoek is gecentreerd
-    header form {
-        margin-top: 1em;
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 7;
-        justify-self: end;
-        width: 1em;
-        position: relative;
-        width: 100%;
-    } */
-
     .ladies-category a img {
         width: 13em;
-        /* goeie code om fotos groter te maken? want was anders  */
     }
 
     .indexPagina main section:nth-of-type(2) {
@@ -1444,7 +1418,6 @@ footer > ul a {
     }
 
     /* footer met 3 checks , de laatste moet rechst staan*/
-    /* regel hetzelf onder elkaar */
 }
 
 /************************************************/
@@ -1520,27 +1493,43 @@ footer > ul a {
     .indexPagina main section:nth-of-type(11) {
         display: block;
         background-color: var(--color--wit);
+        padding: 0.1em;
+    }
+
+    .indexPagina main section:nth-of-type(11) h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
     }
 
     .indexPagina main section:nth-of-type(11) button {
         background-color: var(--color--zwart);
         color: var(--color--wit);
         padding: 1em 5em;
-        /* display: flex;
-        align-items: center; */
+        margin-bottom: 2em;
+        margin-top: .1em;
+    }
+
+    .alleMerken{
+        text-align: center;
     }
 
     .indexPagina main section:nth-of-type(11) ul li {
         list-style: none;
+        line-height: 2em;
+        text-align: center;
     }
 
     .indexPagina main section:nth-of-type(11) ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    footer section ul {
-        max-width: 33%;
+        display: inline-block;
+        justify-content: center;
+        padding: 0;
+        margin: 0 2em;
+        margin-bottom: 3em;
+        
     }
 }
 
@@ -1854,10 +1843,9 @@ footer > ul a {
 .detailpagina aside .specifications h4,
 .detailpagina aside .productInformation h4 {
     margin: 1em;
-    border-bottom: 0.1em solid var(--color--donkerbeige) ;
+    border-bottom: 0.1em solid var(--color--donkerbeige);
     padding-bottom: 1em;
 }
-
 
 /* /------------------------------------------------/
 /------------------------------------------------/
@@ -1869,35 +1857,33 @@ footer > ul a {
     font-size: 1.1em;
     font-family: var(--font-saint_laurent);
     margin-left: 1.2em;
-    
 }
 
 .seeMore a:nth-of-type(2) {
     display: block;
 }
 
-.seeMore ul{
-    list-style: none ;
+.seeMore ul {
+    list-style: none;
     display: flex;
     padding: 0;
 }
 
-.seeMore a{
+.seeMore a {
     padding: 0.9em 1.6em;
     background-color: var(--color--wit);
     border-radius: 4em;
     border: var(--color--donkergrijs) solid 0.1em;
 }
 
-.seeMore a:hover{
+.seeMore a:hover {
     background-color: var(--color--donkerbeige);
     border-color: var(--color--donkerbeige);
 }
 
-.detailpagina section:nth-of-type(3){
+.detailpagina section:nth-of-type(3) {
     background-color: var(--color--wit);
 }
-
 
 /* /------------------------------------------------/
 /------------------------------------------------/
