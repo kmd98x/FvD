@@ -125,7 +125,7 @@ p a {
     cursor: pointer;
 }
 
-.theme-switcher span {
+/* .theme-switcher span {
     position: absolute;
     left: 50%;
     top: 0.2em;
@@ -133,7 +133,7 @@ p a {
     width: calc(50% - 0.2em);
     background: var(--color--lichtbeige);
     border-radius: 3em;
-}
+} */
 
 .theme-switcher img {
     position: relative;
@@ -1178,9 +1178,7 @@ footer section:nth-of-type(4) ul {
     overflow: hidden;
 }
 
-footer h4,
-.specifications h4,
-.productInformation h4 {
+footer h4{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1494,6 +1492,7 @@ footer > ul a {
         display: block;
         background-color: var(--color--wit);
         padding: 0.1em;
+        
     }
 
     .indexPagina main section:nth-of-type(11) h2 {
@@ -1509,11 +1508,11 @@ footer > ul a {
         padding: 1em 5em;
         margin-bottom: 2em;
         margin-top: .1em;
+        margin: auto;
+        display: block;
     }
 
-    .alleMerken{
-        text-align: center;
-    }
+    
 
     .indexPagina main section:nth-of-type(11) ul li {
         list-style: none;
@@ -1529,6 +1528,7 @@ footer > ul a {
         padding: 0;
         margin: 0 2em;
         margin-bottom: 3em;
+    
         
     }
 }
@@ -1677,6 +1677,7 @@ footer > ul a {
     padding: 0;
     margin: 0;
     width: 100%;
+    gap: 2em;
 }
 
 .detailpagina .slideshowThumbnails {
@@ -1685,7 +1686,6 @@ footer > ul a {
     grid-template-columns: repeat(5, 1fr);
     padding: 0;
     margin: 0;
-    gap: 0.2em;
 }
 
 .detailpagina .slideshowThumbnails img {
@@ -1846,6 +1846,7 @@ footer > ul a {
     border-bottom: 0.1em solid var(--color--donkerbeige);
     padding-bottom: 1em;
 }
+
 
 /* /------------------------------------------------/
 /------------------------------------------------/

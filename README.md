@@ -290,6 +290,71 @@ h3, p , p , img vanwege screenreader, 'dit product .... en alt text')
 
 </details>
 
+-Content
+
+Leesbaarheid: teksten zijn goed leesbaar
+Tekstuitlijning: Correct links uitgelijnd
+
+
+-Global code
+
+Paginatitels: elke pagina heeft een unieke titel, dus dat helpt bij navigatie 
+Viewport: je kan inzoomen, wat goed is voor gebruikers met visuele beperkingen
+Landmarks: gebruik gemakt van semantische code (zoals <header>, <main>)
+HTML-validatie: ik heb geen errors
+Taalattribuut: lang=en, dus de screenreaders kunnen erdoor heen
+
+
+-Keyboard
+
+Focus: knoppen hebben een duidelijke focus-indicator
+Toegankelijkheid: zichtbare skiplinks aanwezig; 
+
+-Mobile & Touch
+
+Responsiviteit:  werkt goed in zowel portret- als landschapsmodus
+Interactiviteit: knoppen en links zijn gemakkelijk te bedienen met touch, en er is voldoende ruimte tussen interactieve elementen
+
+
+-Headings
+
+wordtconsistent gebruikt
+
+
+-Lists
+
+word goed gebruikt
+
+
+-Images
+
+de alt teksten zijn duidelijk, dus het is toegankelijk voor visuele beperkte gebruikers
+
+
+-Media
+
+ik heb een video zonder geluid, dus het is niet storend voor gebruikers.
+
+-Control
+
+Links en knoppen: links worden goed weergegeven met a tags en knoppen zijn voorzien van buttons
+Nieuwe tab: Externe links openen in een nieuwe tab en zijn duidelijk gemarkeerd
+
+
+-Appearance
+
+Schaling: tekst is goed leesbaar als er ingezoomd wordt
+High contrast modus: de meeste content blijft goed leesbaar in high contrast
+
+-Animatie
+animaties zijn minimaal, vooral beperkt tot hover-effecten, zonder hinderlijke effecten
+
+
+-Contrast
+
+Normale tekst: contrast voldoet aan WCAG-normen
+Overlap afbeeldingen: tekst over afbeeldingen is leesbaar 
+
 
 
 
